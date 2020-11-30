@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+   
+}
+.encabezado{
+    display: flex;
+    background: rgb(38, 5, 112);
+    
+
+}
+.encabezado img{
+    width: 180px;
+    height: 100px;
+}
+.encabezado h2{
+    margin-left: 200px;
+    margin-top: 22px;
+    color: white;
+}
+.encabezado a{
+    text-decoration: none;
+}
+.encabezado2 nav ul{
+    display: flex;
+} 
+.encabezado2 nav ul li{
+    padding: 3px 30px;
+    list-style: none;
+} 
+.encabezado2 nav ul li a{
+    text-decoration: none;
+}
+.triangulo{
+    width: 0; 
+    height: 0; 
+    border-right: 200px solid rgb(250, 80, 63);
+    border-top: 100px solid transparent;
+    border-bottom: 30px solid transparent; 
+    position: absolute;
+    left: 1166px;
+    top: 0;
+    
+    
+}
+.triangulo img{
+    width: 100px;
+    position: absolute;
+    top:-75px;
+    left: 90px;
+    transition: 0.5s;
+
+}
+hr{
+    background: rgb(38, 5, 112);
+}
