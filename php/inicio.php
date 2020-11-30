@@ -1,16 +1,43 @@
 <?php
-    require_once("conexion.php");
+    require_once("coneccion.php");
 
-    $usu = $_POST['usu'];
-    $pw = $_POST['contra'];
+    if($_POST["enviar"]){
+        //Declaramos las variables para almacenar los datos digitados
+        $documento = $_POST["user"];
+        $clave = $_POST["contra"];
 
-    $consul = "SELECT * FROM usuario WHERE id_usu = '$usu' AND clave = '$pw'";
-    $query = mysqli_query($connect,$consul);
-    $fila = mysqli_fetch_assoc($query);
-    
-    if($fila){
-        header("Location: ../iniciosesion.html");
-    } else {
-        echo "error perro";
+        //Hacemos la consulta para que me seleccione los datos en la BD y valide
+        $consul = "SELECT * FROM usuario WHERE documento = '$documento' AND clave = '$clave'";
+        $query = mysqli_query($mysqli,$consul);
+        $fila = mysqli_fetch_assoc($query);
+
+        //Hacemos una toma de decision para que se logee el usuario correctamente
+        if($fila){
+            $_SESSION['nombre'] = $fila['nom_user'];
+            $_SESSION['apellido'] = $fila['ape_user'];
+            $_SESSION['telefono'] = $fila['celular'];
+            $_SESSION['direccion'] = $fila['direccion'];
+            $_SESSION['email'] = $fila['correo'];
+            $_SESSION['id_tip_usu'] = $fila['id_tip_user'];
+            
+            //Hacemos la toma de decision para determinar quien se va a logear
+            if($_SESSION['id_tip_usu'] == 1){
+                header('Location: ..admin/adminis.php');
+                exit();
+            }
+            elseif ($_SESSION['id_tip_usu'] == 2) {
+                header('Location: ..usuario/usuario.php');
+                exit();
+            }
+            else{
+                echo "No perro no cogio";
+            }
+        }
+        else{
+            echo "No perro no cogio x2";
+        }
+    }
+    else{
+        echo "No perro no cogio x3";
     }
 ?>
