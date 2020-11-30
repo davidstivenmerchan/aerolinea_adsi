@@ -43,6 +43,13 @@
     left: 1166px;
     top: 0; 
 }
+.logo_dos{
+    position: absolute;
+    width: 100px;
+    left: 1250px;
+    top: 30px;
+    transition: 0.1s;
+}
 
 hr{
     background: rgb(38, 5, 112);
@@ -180,4 +187,14 @@ footer p{
     color: white;
     margin-left: 10px;
 
+}
+.linea_iniciar{
+    width: 122px;
+    margin-left: 200px;
+    display: none;
+    transition: .1s;
+    color: white;
+}
+.iniciar:hover .linea_iniciar{
+    display: block;
 }
