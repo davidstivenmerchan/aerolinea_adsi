@@ -234,5 +234,11 @@ footer p{
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 
-
+}
+.contenedor_todo_actividades{
+    display: flex;
+    background: green;
+    width: 1250px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
