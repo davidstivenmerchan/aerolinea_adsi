@@ -191,10 +191,9 @@ footer p{
 .linea_iniciar{
     width: 122px;
     margin-left: 200px;
-    display: none;
     transition: .1s;
     color: white;
-}
-.iniciar:hover .linea_iniciar{
-    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
 }
