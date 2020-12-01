@@ -28,7 +28,8 @@
 h3{
     font-family: cursive;
     font-size: 25px;
-    color: blueviolet;
+    color: rgb(38, 5, 112);
+    margin: 27px 19px;
 }
 
 .btn_header{
@@ -51,7 +52,7 @@ h3{
 
 .btn_menu:hover{
     cursor: pointer;
-    color: blueviolet;
+    color: rgb(38, 5, 112);
 }
 
 .menu{
@@ -70,4 +71,190 @@ h3{
     margin: 6px 14px;
     width: 1320px;
     height: 380px;
+}
+
+.modulos{
+    height: 150px;
+}
+
+.modulo1{
+    margin: 20px 50px;
+    width: 300px;
+    height: 100px;   
+}
+
+.modulo2{
+    margin: -120px 501px;
+    width: 300px;
+    height: 100px;
+}
+
+.modulo3{
+    width: 300px;
+    margin: 20px 964px;
+    height: 100px;
+}
+
+.btn_modulo{
+    margin: 25px 77px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: rgb(38, 5, 112);
+    font-family: cursive;
+    color: white;
+}
+
+.btn_modulo:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(38, 5, 112, 1);
+    transition: all 0.2s ease;
+}
+
+.facebook{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    transition: 0.5s;
+    display: flex;
+    padding: 10px;
+}
+.facebook p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.instagram{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.instagram p{
+    margin-left: 30px;
+    font-size: 15px;
+    color: white;
+}
+.twitter{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.twitter p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.youtube{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+}
+.youtube p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.facebook:hover{
+    margin-left: 1200px;
+
+}
+.instagram:hover{
+    margin-left: 1200px;
+
+}
+.twitter:hover{
+    margin-left: 1200px;
+
+}
+.youtube:hover{
+    margin-left: 1200px;
+
+}
+.facebooki{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(238, 235, 235);;
+}
+.instagrami{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(231, 229, 229);;
+}
+.twitteri{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(235, 232, 231);;
+}
+.youtubei{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(230, 230, 230);;
+}
+
+.footer{
+    border: 2px solid black;
+    height: 150px;
+    background: rgb(38, 5, 112);
+}
+
+.titulo-footer{
+    font-family: cursive;
+    font-size: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.img{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 88px;
+}
+
+.img2{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 533px;
+}
+
+.img3{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 975px;
 }
