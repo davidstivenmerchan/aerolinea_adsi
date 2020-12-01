@@ -71,3 +71,8 @@ h3{
     width: 1320px;
     height: 380px;
 }
+
+.modulos{
+    border: 2px solid black;
+    background: blueviolet;
+}
