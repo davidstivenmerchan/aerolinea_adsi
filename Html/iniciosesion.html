@@ -8,16 +8,22 @@
 </head>
 <body>
     <div class="container">
+        <img src="../imagenes/logoage.png" alt="">
         <div class="formu">
             <form action="../php/inicio.php" method="POST" id="form">
-                <label for="user">Usuario</label>
+                <h1>INICIO DE SESION</h1>
+                <label for="user"><i>Usuario</i></label>
                 <input type="text" id="usu" name="usu" placeholder="Ingrese su usuario" required autocomplete="off">
-                <label for="password">Password</label>
+                <label for="password"><i>Password</i></label>
                 <input type="password" id="contra" name="contra" placeholder="Ingrese su contraseña" required autocomplete="off">
-                <input type="submit" name="enviar" id="env" value="Registrar">
-                <a href="registro.html" class="registro">Registrate ahora</a>
+                <input type="submit" name="enviar" id="env" value="Ingresar">
+                <div class="opc">
+                    <a href="registro.html" class="registro"><i>Registrate ahora</i></a>
+                    <a href="../index.html" class="regreso"><i>Regresar</i></a>
+                </div>
             </form>
         </div>
+        
     </div>
 </body>
 </html>
