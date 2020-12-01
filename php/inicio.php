@@ -22,7 +22,7 @@
             
             //Hacemos la toma de decision para determinar quien se va a logear
             if($_SESSION['id_tip_usu'] == 1){
-                header('Location: ..admin/adminis.php');
+                header('Location: ..admi/admin.html');
                 exit();
             }
             elseif ($_SESSION['id_tip_usu'] == 2) {

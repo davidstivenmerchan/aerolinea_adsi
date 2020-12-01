@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosreg.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formu">
+            <form action="../php/registro.php" method="POST" id="form">
+                <label for="user">Documento</label>
+                <input type="text" id="usu" name="doc" placeholder="Ingrese su usuario o Documento" required autocomplete="off">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nom" name="nom" placeholder="Ingrese su nombre completo" required autocomplete="off">
+                <label for="apellido">Apellido completo</label>
+                <input type="text" id="ape" name="ape" placeholder="Ingrese su apellido completo" required autocomplete="off">
+                <label for="direccion">Direccon</label>
+                <input type="text" id="direc" name="dire" placeholder="Ingrese su direccion" required autocomplete="off">
+                <label for="correo">Correo</label>
+                <input type="text" id="corr" name="correo" placeholder="Ingrese su Correo" required autocomplete="off">
+                <label for="celular">Celular</label>
+                <input type="text" id="cel" name="celular" placeholder="Ingrese su Celular" required autocomplete="off">
+                <label for="password">Password</label>
+                <input type="password" id="contra" name="contra" placeholder="Ingrese su contraseña" required autocomplete="off">
+                <input type="submit" name="enviar" id="env" value="Ingresar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
