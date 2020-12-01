@@ -258,3 +258,69 @@ h3{
     height: 150px;
     margin: 76px 975px;
 }
+/***************************Portafolio de imagenes***************************/
+.port1, .port2, .port3{
+    margin: auto 70px;
+    width: 100%;
+    transition: all 0.5s;
+}
+.portafolio{
+    margin: -570px -35px;
+    width: 100%;
+    height: 300px;
+    max-width: 1400px;
+    font-size: 20px;
+    position: relative;
+}
+.port-tit{
+    width: 470px;
+    background-color: #3d7ea6;
+    text-align: center;
+    font-size: 48px;
+    font-style: oblique;
+    margin: 660px 490px 40px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,3);
+}
+.port-tit:hover{
+    cursor: pointer;
+}
+#port-cont{
+    display: flex;
+}
+.port-item{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.port-text{
+    margin: auto 55px;
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(150%);
+    transition: all 0.5s ease-out;
+    background-color: rgba(0,0,0,0.6);
+    color: #a3d8f4;
+}
+.port-item:hover .port-text{
+    transform: translateY(0%);
+}
+.port-item:hover .port1 {
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.port-item:hover .port2{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.port-item:hover .port3{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.text1{
+    font-size: 18px;
+    text-align: justify;
+}
