@@ -4,6 +4,7 @@ body{
     background-image: url(../imagenes/fondologin.jpg);
     background-repeat:no-repeat ;
     background-size: cover;
+    font-family: 'Saira Condensed', sans-serif;
 }
 .container
 {
@@ -22,6 +23,7 @@ body{
 }
 h1{
     margin-top: 20%;
+
 }
 .formu{
     
@@ -34,6 +36,7 @@ h1{
     margin-left: 2%;
     text-align: center;
     padding: 10px;
+    
 }
 
 
@@ -54,7 +57,7 @@ input:hover{
 label{
     margin: 20px 20px;
     font-size: 25px;
-    font-family: 'Times New Roman';
+    font-family: 'Saira Condensed', sans-serif;
     color: white;
 }
 .opc{
@@ -67,7 +70,7 @@ label{
     margin: 10px 100px;
     background-color: rgb(38, 5, 112);
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 15px;
     color: white;
     padding: 5px 5px;
