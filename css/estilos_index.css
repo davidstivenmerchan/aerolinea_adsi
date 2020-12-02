@@ -261,6 +261,7 @@ footer p{
 }
 .actividades p{
     margin-left: 4px;
+    color:rgb(250, 80, 63);
 }
 .precio_actividad{
     background: rgb(250, 80, 63);
@@ -269,15 +270,12 @@ footer p{
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 50px;
-    border: white solid;
-    
+    border: white solid;  
 }
 .precio_actividad h5{
     font-size: 22px;
     text-align: center;
-    margin-top: 5px;
-   
-    
+    margin-top: 5px; 
 }
 .actividades:hover{
 -webkit-box-shadow: 0px 2px 14px 8px rgba(66,56,66,0.72);
