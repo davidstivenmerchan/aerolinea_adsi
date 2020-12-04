@@ -1,3 +1,7 @@
+<?php
+    require_once('php/coneccion.php');
+    $consulta = "SELECT * FROM vuelos"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
         <div class="encabezado">
             <img src="imagenes/logo_aerolinea.PNG" alt="titulo">
             <a href="Html/iniciosesion.html"><h2 class="iniciar">INICIAR SESION</h2><hr class="linea_iniciar"></a>
-            <a href=""><h2 class="registrarse">REGISTRARSE</h2></a>
+            <a href="admi/admin.html"><h2 class="registrarse">REGISTRARSE</h2></a>
         </div>
 <hr>
         <div class="encabezado2">
@@ -53,10 +57,29 @@
     <br>
     <h2 class="titulo_bienvenida">VUELOS</h2>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="tabla_vuelos_administrador">
+        <div class="titulo">vuelos</div>
+        <div class="elem_TI">N° VUELO</div>
+        <div class="elem_TI">HORA PROGRAMADA</div>
+        <div class="elem_TI">LUGAR DESTINO</div>
+        <div class="elem_TI">LUGAR SALIDA</div>
+        <div class="elem_TI">AEROPUERTO SALIDA</div>
+        <div class="elem_TI">AEROPUERTO DESTINO</div>
+        <div class="elem_TI">ESTADO</div>
+    <?php $resultadoss = mysqli_query($mysqli,$consulta);
+    
+    while($row=mysqli_fetch_assoc($resultadoss)){?>
+        <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
+        <div class="elem"><?php echo $row["hora_programada"]; ?> </div>
+        <div class="elem"><?php echo $row["destino"]; ?> </div>
+        <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
+        <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
+        <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
+        <div class="elem"><?php echo $row["estado"]; ?> </div>
+
+        <?php } mysqli_free_result($resultadoss);?>
+        
+    </div>
     <br>
     <hr>
     <br>
