@@ -1,6 +1,9 @@
 *{
     font-family: 'Saira Condensed', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 .header{
     height: 125px;
