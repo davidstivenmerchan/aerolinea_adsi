@@ -64,6 +64,13 @@
         <div class="youtube"><i class="youtubei fab fa-youtube"></i><p>Youtube</p></div>
     </div>
     <!--------------------------------- redes sociales --------------------------->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <
     <div class="vuelosindex" id="vuelosindex">
     <h2 class="titulo_bienvenida">VUELOS</h2>
     <br>
@@ -118,12 +125,11 @@
     <br>
     <br>
     <br>
-    <br>
+     <br>
     <hr>
     <br>
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
-        
         <div class="contenedor_todo_actividades">
             <div class="actividades"><img src="imagenes/actividad1.jpg" alt=""><h4>Islas Maldivas</h4><p>Un archipiélago remoto del Atlántico Sur.</p><br><hr><div class="precio_actividad"><h5>$8'000.000</h5></div></div>
             <div  class="actividades"><img src="imagenes/actividad2.jpg" alt=""><h4>Paris</h4><p>La capital de Francia, es una importante ciudad europea</p><br><hr><div class="precio_actividad"><h5>$4'000.000</h5></div></div>
@@ -140,7 +146,7 @@
         </div>
     </div>
     <br>
-    <hr>
+    <hr> 
     <br>
     <h2 class="titulo_bienvenida">SERVICIOS</h2>
     <br>
@@ -153,16 +159,12 @@
         <div><img src="imagenes/servicio3.png" alt=""><h4>ACTIVIDADES</h4></div>
         <div><img src="imagenes/servicio4.png" alt=""><h4>RESERVAS</h4></div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <hr>
     <br>
     <h2 class="titulo_bienvenida">QUIENES SOMOS</h2>
     <br>
     <br>
-    
     <br>
     <br>
     <br>
@@ -195,4 +197,4 @@
 </body>
 <script src="js/app.js" ></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-</html>
+</html> 
