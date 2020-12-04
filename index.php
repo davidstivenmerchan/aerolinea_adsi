@@ -131,7 +131,15 @@
     <br>
     <h2 class="titulo_bienvenida">SERVICIOS</h2>
     <br>
-    <br>
+    <p class="p-servicios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores soluta sit ad veritatis similique magni, in quis architecto corrupti aliquam sequi, deserunt ipsum eveniet, vitae consectetur tempora dolor eum pariatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem similique, suscipit aliquam inventore voluptatum, architecto reiciendis ipsum corporis ad et nulla vel fugit? Magni dolor incidunt accusamus quia enim?
+    </p>
+    <div class=servicios>
+        <div><img src="imagenes/servicio1.png" alt=""><h4>VUELOS</h4></div>
+        <div><img src="imagenes/servicio2.png" alt=""><h4>HOTELES</h4></div>
+        <div><img src="imagenes/servicio3.png" alt=""><h4>ACTIVIDADES</h4></div>
+        <div><img src="imagenes/servicio4.png" alt=""><h4>RESERVAS</h4></div>
+    </div>
     <br>
     <br>
     <br>
