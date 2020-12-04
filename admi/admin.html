@@ -14,31 +14,32 @@
                 <h3>AEROLINEA</h3>
             </div>    
                 <ul class="header-autogestion">
-                    <button class="btn_header">Mis viajes</button>
-                    <button class="btn_header">Ayuda</button>
                     <button class="btn_header">Cerrar Sesion</button>
                 </ul>
-            <div class="menu">
-                <button class="btn_menu">Clientes</button>
-                <button class="btn_menu">Vuelos</button>
-                <button class="btn_menu">Actividades</button>
-                <button class="btn_menu">Asistencias</button>
-                <button class="btn_menu">Traslados</button>
-                <button class="btn_menu">Editar</button>
+            <div class="menu1">
                 <div class="admin">
-                    <h4>ADMINISTRADOR: ANDRES MORENO</h4>
+                    <h4>ADMINISTRADOR: EVER MORENO</h4>
                 </div>
             </div>      
         </div>
         <hr class="linea">
         <div class="slider">
-            <img class="imagen-slider" src="../imagenes/aviones.jpg" alt="">
+            <ul>
+                <li class="sli"><img src="../imagenes/1.jpg" alt="" width="1320" height="380"></li>
+                <li class="sli"><img src="../imagenes/2.jpg" alt="" width="1320" height="380"></li>
+                <li class="sli"><img src="../imagenes/3.jpg" alt="" width="1320" height="380"></li>
+                <li class="sli"><img src="../imagenes/4.jpg" alt="" width="1320" height="380"></li>
+            </ul>
+            <!--<img class="imagen-slider" src="../imagenes/aviones.jpg" alt="">-->
         </div>
         <hr>
         <div>
-            <img src="../imagenes/Logo-Adidas.jpg" class="img" alt="">
-            <img src="../imagenes/Logo-Adidas.jpg" class="img2" alt="">
-            <img src="../imagenes/Logo-Adidas.jpg" class="img3" alt="">
+            <div class="info">
+                <p class="text-admin">NOMBRE: ACA VA EL NOMBRE QUE VIENE DEL PHP</p>
+                <p class="text-admin">CORREO: ACA VIENE EL CORREO DEL PHP</p>
+                <P class="text-admin">TIPO USUARIO: ACA VIENE EL TIPO DE USUARIO PHP</P>
+            </div>
+            <button class="btn_editar">EDITAR INFORMACION</button>
             <div class="facebook"><i class="facebooki fab fa-facebook-f"></i><p>Facebook</p></div>
             <div class="instagram"><i class="instagrami fab fa-instagram"></i><p>Instagram</p></div>
             <div class="twitter"><i class="twitteri fab fa-twitter"></i><p>Twitter</p></div>
@@ -46,42 +47,21 @@
         </div>
         <hr>
         <div class="modulos">
-            <div class="modulo1"><button class="btn_modulo"> <a href="crear_vuelos.html">CREAR vuelos</a></button></div>
-            <div class="modulo2"><button class="btn_modulo"><a href="vuelos.php">Vuelos</a></button></div>
-            <div class="modulo3"><button class="btn_modulo">Pasajeros</button></div>
+            <div class="modulo1"><button class="btn_modulo"><a href="#">Clientes</a></button></div>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#">Vuelos</a>
+                        <ul class="submenu">
+                            <li><a href="#">Crear vuelo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <hr>
         <div class="footer">
             <h2 class="titulo-footer">AEROLINEA ADSI © 2020</h2>
         </div>
-    </div>
-    <!---Portafolio de imagenes--->
-    <section class="portafolio" id="portafolio">
-        <h2 class="port-tit" id="port-tit">Viajes Mas Populares</h2>
-        <div class="port-cont" id="port-cont">
-            <section class="port-item">
-                <img src="../imagenes/actividad5.jpg" alt="" height="380px" class="port1" id="port1">
-                <article class="port-text" id="port-text">
-                    <h2 class="text" id="text">Mensajeria Express</h2>
-                    <p class="text1" id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error</p>
-                </article>
-            </section>
-            <section class="port-item">
-                <img src="../imagenes/actividad8.jpg" alt="" height="380px" class="port2" id="port2">
-                <article class="port-text" id="port-text">
-                    <h2 class="text" id="text">Actualiad En La Mensajeria</h2>
-                    <p class="text1" id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed er</p>
-                </article>
-            </section>
-            <section class="port-item">
-                <img src="../imagenes/actividad6.jpg" alt="" height="380px" class="port3" id="port3">
-                <article class="port-text" id="port-text">
-                    <h2 class="text" id="text">Mercancia Rapida</h2>
-                    <p class="text1" id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error</p>
-                </article>
-            </section>
-        </div>
-    </section>
 </body>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </html>
