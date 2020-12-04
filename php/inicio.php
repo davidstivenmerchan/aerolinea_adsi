@@ -4,7 +4,7 @@
     if($_POST["enviar"]){
         //Declaramos las variables para almacenar los datos digitados
         $documento = $_POST["user"];
-        $clave = $_POST["contra"];
+        $clave = $_POST["contra"]; 
 
         //Hacemos la consulta para que me seleccione los datos en la BD y valide
         $consul = "SELECT * FROM usuario WHERE documento = '$documento' AND clave = '$clave'";
