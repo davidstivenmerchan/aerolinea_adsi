@@ -18,7 +18,7 @@
         <div class="encabezado">
             <img src="imagenes/logo_aerolinea.PNG" alt="titulo">
             <a href="Html/iniciosesion.html"><h2 class="iniciar">INICIAR SESION</h2><hr class="linea_iniciar"></a>
-            <a href="admi/admin.html"><h2 class="registrarse">REGISTRARSE</h2></a>
+            <a href="Html/registro.html"><h2 class="registrarse">REGISTRARSE</h2></a>
         </div>
 <hr>
         <div class="encabezado2">
