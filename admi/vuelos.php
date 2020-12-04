@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="tabla_vuelos_administrador">
-        <div class="titulo">vuelos</div>
+        <div class="titulo">VUELOS</div>
         <div class="elem_TI">N° VUELO</div>
         <div class="elem_TI">HORA PROGRAMADA</div>
         <div class="elem_TI">LUGAR DESTINO</div>
