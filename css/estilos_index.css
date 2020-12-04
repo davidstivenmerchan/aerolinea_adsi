@@ -282,4 +282,13 @@ footer p{
 -moz-box-shadow: 0px 2px 14px 8px rgba(66,56,66,0.72);
 box-shadow: 0px 2px 14px 8px rgba(66,56,66,0.72);
 }
+.iniciar:hover{
+    color: rgb(250, 80, 63);
+    border-bottom: solid rgb(250, 80, 63);
+}
+.registrarse:hover{
+    color: rgb(250, 80, 63);
+    border-bottom: solid rgb(250, 80, 63);
+}
 
+/* tabla de vuelos */
