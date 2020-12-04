@@ -30,5 +30,5 @@
     text-align: center;
     color: white;
     padding: 15px;
-
+    z-index: 100;
 }
