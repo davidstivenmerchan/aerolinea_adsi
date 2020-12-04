@@ -1,10 +1,16 @@
+*{
+    font-family: 'Saira Condensed', sans-serif;
+}
+
 .header{
     height: 125px;
 
 }
 
 .slider{
-    height: 400px;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .titulo{
@@ -13,8 +19,8 @@
 }
 
 .header-autogestion {
-    margin: 37px 994px;
-    width: 350px;
+    margin: 37px 1171px;
+    width: 164px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -26,7 +32,6 @@
 }
 
 h3{
-    font-family: cursive;
     font-size: 25px;
     color: rgb(38, 5, 112);
     margin: 27px 19px;
@@ -35,7 +40,6 @@ h3{
 .btn_header{
     border: none;
     margin: 10px;
-    font-family: cursive;
 }
 
 .btn_header:hover{
@@ -46,7 +50,6 @@ h3{
     border: none;
     margin: 5px;
     font-size: 15px;
-    font-family: cursive;
     background-color: white;
 }
 
@@ -55,16 +58,15 @@ h3{
     color: rgb(38, 5, 112);
 }
 
-.menu{
+.menu2{
     width: 600px;
 }
 
 .admin{
-    width: 180px;
-    height: 36px;
-    font-size: 10px;
-    margin: -34px 1155px;
-    font-family: cursive;
+    width: 300px;
+    height: 73px;
+    font-size: 18px;
+    margin: 56px 535px;
 }
 
 .imagen-slider{
@@ -73,25 +75,51 @@ h3{
     height: 380px;
 }
 
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 10s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.sli{
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 .modulos{
     height: 150px;
 }
 
 .modulo1{
-    margin: 20px 50px;
+    margin: 20px 279px;
     width: 300px;
-    height: 100px;   
+    height: 100px;  
 }
 
 .modulo2{
-    margin: -120px 501px;
+    margin: -120px 797px;
     width: 300px;
-    height: 100px;
-}
-
-.modulo3{
-    width: 300px;
-    margin: 20px 964px;
     height: 100px;
 }
 
@@ -100,10 +128,8 @@ h3{
     width: 150px;
     height: 50px;
     font-size: 15px;
-    border-radius: 15px;
     border: 2px solid black;
     background: rgb(38, 5, 112);
-    font-family: cursive;
     color: white;
 }
 
@@ -112,6 +138,64 @@ h3{
     background-color: white;
     box-shadow: 0 4px 16px rgba(38, 5, 112, 1);
     transition: all 0.2s ease;
+}
+
+.navegacion{
+	width: 150px;
+    margin: -93px 735px;
+    background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+    padding: 15px 20px;
+    color: #f5ecec;
+    text-decoration: none;
+    background: rgb(38, 5, 112);
+    border: 2px solid black;
+    width: 102px;
+    text-align: center;
+}
+
+.menu li a:hover{
+    color: black;
+    background: white;
+    box-shadow: 0 4px 16px rgba(38, 5, 112, 1);
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: rgb(38, 5, 112);
+    width: 100%;
+    margin: 0 auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+    padding: 15px;
+    margin: 0px auto;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
 }
 
 .facebook{
@@ -232,7 +316,6 @@ h3{
 }
 
 .titulo-footer{
-    font-family: cursive;
     font-size: 10px;
     margin: 10px;
     color: white;
@@ -258,69 +341,43 @@ h3{
     height: 150px;
     margin: 76px 975px;
 }
-/***************************Portafolio de imagenes***************************/
-.port1, .port2, .port3{
-    margin: auto 70px;
-    width: 100%;
-    transition: all 0.5s;
+
+a{
+    text-decoration: none;
+    color: white;
 }
-.portafolio{
-    margin: -570px -35px;
-    width: 100%;
-    height: 300px;
-    max-width: 1400px;
-    font-size: 20px;
-    position: relative;
+
+a:hover{
+    color: black;
 }
-.port-tit{
-    width: 470px;
-    background-color: #3d7ea6;
-    text-align: center;
-    font-size: 48px;
-    font-style: oblique;
-    margin: 660px 490px 40px;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 1px 1px 20px 1px rgba(0,0,0,3);
-}
-.port-tit:hover{
-    cursor: pointer;
-}
-#port-cont{
-    display: flex;
-}
-.port-item{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.port-text{
-    margin: auto 55px;
+
+.info{
+    width: 1000px;
+    height: 150px;
+    border: 2px solid black;
     position: absolute;
-    font-size: 20px;
-    width: 100%;
-    bottom: 0;
-    transform: translateY(150%);
-    transition: all 0.5s ease-out;
-    background-color: rgba(0,0,0,0.6);
-    color: #a3d8f4;
+    margin: 70px 100px;
+    background: rgb(38, 5, 112);
+    border-radius: 30px;
 }
-.port-item:hover .port-text{
-    transform: translateY(0%);
+
+.text-admin{
+    margin: 20px 35px;
+    color: white;
 }
-.port-item:hover .port1 {
-    cursor: pointer;
-    transform: scale(1.10);
+
+.btn_editar{
+    position: absolute;
+    margin: 175px 863px;
+    width: 190px;
+    padding: 5px;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 40px;
+    color: white;
+    background: rgb(38, 5, 112);
 }
-.port-item:hover .port2{
-    cursor: pointer;
-    transform: scale(1.10);
-}
-.port-item:hover .port3{
-    cursor: pointer;
-    transform: scale(1.10);
-}
-.text1{
-    font-size: 18px;
-    text-align: justify;
+
+.btn_editar:hover{
+    color: black;
+    background: white;
 }
