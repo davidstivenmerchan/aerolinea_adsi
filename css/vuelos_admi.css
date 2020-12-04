@@ -11,6 +11,9 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-auto-rows: 50px;
+    -webkit-box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
 }
 .titulo{
     grid-column-start:1 ;
