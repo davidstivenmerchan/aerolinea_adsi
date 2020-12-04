@@ -145,7 +145,7 @@ footer p{
 
 .redes{
     margin-top: -27%;
-    position: fixed;
+    
 }
 .facebook, .twitter, .youtube, .instagram{
     width: 400px;
@@ -181,9 +181,8 @@ footer p{
 
 /*-------------------------------------- actividades---------------------------- */
 .activi{
-    visibility: hidden;
-    margin-top: -110%;
-    background-color:blue;
+    
+    margin-top: 10px;
 }
 .contenedor_todo_actividades{
     display: flex;
