@@ -21,6 +21,7 @@
         <div class="elem_TI">AEROPUERTO SALIDA</div>
         <div class="elem_TI">AEROPUERTO DESTINO</div>
         <div class="elem_TI">ESTADO</div>
+        
     <?php $resultados = mysqli_query($mysqli,$consulta_vuelos);
     
     while($row=mysqli_fetch_assoc($resultados)){?>
@@ -31,10 +32,14 @@
         <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
         <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
         <div class="elem"><?php echo $row["estado"]; ?> </div>
+       
+       
 
         <?php } mysqli_free_result($resultados);?>
         
     </div>
+
+    <a href="modificar_vuelos.php">modificar vuelos</a>
     
 </body>
 </html>
