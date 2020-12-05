@@ -22,13 +22,13 @@
             <a href="Html/registro.html"><h2 class="registrarse">REGISTRARSE</h2></a>
 
         </div>
-<hr>
+
         <div class="encabezado2">
             <nav>
                 <ul>
                     <li><b>INICIO</b></li>
                     <li id="vuelos"><b>VUELOS</b></li>
-                    <li id="etiquetes"><b>TIQUETES</b></li>
+                    <li id="tiquetes"><b>TIQUETES</b></li>
                     <li id="viajes"><b>MIS VIAJES</b></li>
                     <li id="precios"><b>PRECIOS</b></li>
                     <li id="actividades"><b>ACTIVIDADES</b></li>
@@ -42,7 +42,7 @@
         </div>
     </header>
     <img class="logo_dos" src="imagenes/logoage.png" alt="">
-
+<div class="contenido">
     <div class="inicio" id="inicio">
         <img class="logo" src="imagenes/sinfondo.png" alt="">
         <h2 class="titulo_bienvenida">BIENVENIDOS A NUESTRA AEROLINEA</h2>
@@ -64,70 +64,54 @@
         <div class="youtube"><i class="youtubei fab fa-youtube"></i><p>Youtube</p></div>
     </div>
     <!--------------------------------- redes sociales --------------------------->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <
+    
+    <!--------------------------------- vuelos --------------------------->
     <div class="vuelosindex" id="vuelosindex">
-    <h2 class="titulo_bienvenida">VUELOS</h2>
-    <br>
-        <div class="tabla_vuelos_administrador">
-            <div class="titulo">VUELOS</div>
-            <div class="elem_TI">N° VUELO</div>
-            <div class="elem_TI">HORA PROGRAMADA</div>
-            <div class="elem_TI">LUGAR DESTINO</div>
-            <div class="elem_TI">LUGAR SALIDA</div>
-            <div class="elem_TI">AEROPUERTO SALIDA</div>
-            <div class="elem_TI">AEROPUERTO DESTINO</div>
-            <div class="elem_TI">ESTADO</div>
-        <?php $resultadoss = mysqli_query($mysqli,$consulta);
-        
-        while($row=mysqli_fetch_assoc($resultadoss)){?>
-            <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
-            <div class="elem"><?php echo $row["hora_programada"]; ?> </div>
-            <div class="elem"><?php echo $row["destino"]; ?> </div>
-            <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
-            <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
-            <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
-            <div class="elem"><?php echo $row["estado"]; ?> </div>
-
-            <?php } mysqli_free_result($resultadoss);?>
+        <h2 class="titulo_bienvenida">VUELOS</h2>
+        <br>
+            <div class="tabla_vuelos_administrador">
+                <div class="titulo">VUELOS</div>
+                <div class="elem_TI">N° VUELO</div>
+                <div class="elem_TI">HORA PROGRAMADA</div>
+                <div class="elem_TI">LUGAR DESTINO</div>
+                <div class="elem_TI">LUGAR SALIDA</div>
+                <div class="elem_TI">AEROPUERTO SALIDA</div>
+                <div class="elem_TI">AEROPUERTO DESTINO</div>
+                <div class="elem_TI">ESTADO</div>
+            <?php $resultadoss = mysqli_query($mysqli,$consulta);
             
-        </div>
+            while($row=mysqli_fetch_assoc($resultadoss)){?>
+                <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
+                <div class="elem"><?php echo $row["hora_programada"]; ?> </div>
+                <div class="elem"><?php echo $row["destino"]; ?> </div>
+                <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
+                <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
+                <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
+                <div class="elem"><?php echo $row["estado"]; ?> </div>
+
+                <?php } mysqli_free_result($resultadoss);?>
+                
+            </div>
     </div>
-    <br>
-    <hr>
-    <br>
+     <!--------------------------------- vuelos--------------------------->
+    
+      <!--------------------------------- +tiquetes --------------------------->
+    <div class="tiquee" id="tiquee">
     <h2 class="titulo_bienvenida">TIQUETES</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
+    </div>
+     <!--------------------------------- +tiquetes --------------------------->
+
+     <!--------------------------------- viajes --------------------------->
+    <div class="viajee" id="viaje">
     <h2 class="titulo_bienvenida">MIS VIAJES</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
+    </div>
+    <!--------------------------------- viajes --------------------------->
+
+    <!--------------------------------- precios --------------------------->
+    <div class="precioo" id="precioo">
     <h2 class="titulo_bienvenida">PRECIOS</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-     <br>
-    <hr>
-    <br>
+    </div>
+    
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
         <div class="contenedor_todo_actividades">
@@ -145,55 +129,43 @@
             <div  class="actividades"><img src="imagenes/actividad10.jpg" alt=""><h4>Holanda</h4><p>Un país de Europa conocido por su paisaje plano de canales</p><br><hr><div class="precio_actividad"><h5>$5'560.000</h5></div></div>
         </div>
     </div>
-    <br>
-    <hr> 
-    <br>
-    <h2 class="titulo_bienvenida">SERVICIOS</h2>
-    <br>
-    <p class="p-servicios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores soluta sit ad veritatis similique magni, in quis architecto corrupti aliquam sequi, deserunt ipsum eveniet, vitae consectetur tempora dolor eum pariatur!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem similique, suscipit aliquam inventore voluptatum, architecto reiciendis ipsum corporis ad et nulla vel fugit? Magni dolor incidunt accusamus quia enim?
-    </p>
-    <div class=servicios>
-        <div><img src="imagenes/servicio1.png" alt=""><h4>VUELOS</h4></div>
-        <div><img src="imagenes/servicio2.png" alt=""><h4>HOTELES</h4></div>
-        <div><img src="imagenes/servicio3.png" alt=""><h4>ACTIVIDADES</h4></div>
-        <div><img src="imagenes/servicio4.png" alt=""><h4>RESERVAS</h4></div>
+    <!--------------------------------- precios --------------------------->
+
+    <!--------------------------------- servicios --------------------------->
+    <div class="servicioo" id="servicioo">
+        <h2 class="titulo_bienvenida">SERVICIOS</h2>
+        <br>
+        <p class="p-servicios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores soluta sit ad veritatis similique magni, in quis architecto corrupti aliquam sequi, deserunt ipsum eveniet, vitae consectetur tempora dolor eum pariatur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem similique, suscipit aliquam inventore voluptatum, architecto reiciendis ipsum corporis ad et nulla vel fugit? Magni dolor incidunt accusamus quia enim?
+        </p>
+        <div class=servicios>
+            <div><img src="imagenes/servicio1.png" alt=""><h4>VUELOS</h4></div>
+            <div><img src="imagenes/servicio2.png" alt=""><h4>HOTELES</h4></div>
+            <div><img src="imagenes/servicio3.png" alt=""><h4>ACTIVIDADES</h4></div>
+            <div><img src="imagenes/servicio4.png" alt=""><h4>RESERVAS</h4></div>
+        </div>
     </div>
-    <br><br><br>
-    <hr>
-    <br>
+    
+    <!--------------------------------- servicios --------------------------->
+
+    <!--------------------------------- quienes somos --------------------------->
+    <div class="somoos" id="somoos">
     <h2 class="titulo_bienvenida">QUIENES SOMOS</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
+    </div>
+     <!--------------------------------- quienes somos --------------------------->
+
+      <!--------------------------------- alojamiento --------------------------->
+    <div class="aloja" id="aloja">
     <h2 class="titulo_bienvenida">ALOJAMIENTO</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <div>
-   
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </div>
+    <!--------------------------------- alojamiento --------------------------->
 
 
     <footer>
         <img src="imagenes/sinfondo.png" alt="logo">
         <p> &copy; aerolinea-adsi</p>
     </footer>
+</div>
 </body>
 <script src="js/app.js" ></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>

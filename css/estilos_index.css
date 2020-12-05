@@ -5,6 +5,9 @@
     overflow-x: hidden;
    
 }
+body{
+    margin: 0%;
+} 
 /*--------------------------------- encabezado---------------------------- */
 .encabezado{
     display: flex;
@@ -90,7 +93,7 @@
 footer{
     background: rgb(38, 5, 112);
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10%;
 }
 footer img{
     width: 100px;
@@ -145,7 +148,6 @@ footer p{
 
 .redes{
     margin-top: -27%;
-    
 }
 .facebook, .twitter, .youtube, .instagram{
     width: 400px;
@@ -181,8 +183,8 @@ footer p{
 
 /*-------------------------------------- actividades---------------------------- */
 .activi{
-    
-    margin-top: 10px;
+    display: none;
+    margin-top: 5%;
 }
 .contenedor_todo_actividades{
     display: flex;
@@ -235,6 +237,10 @@ box-shadow: 0px 2px 14px 8px rgba(66,56,66,0.72);
 
 
 /* _________________________________tabla de vuelos__________________________ */
+.vuelosindex{
+    display: none;
+    margin-top: 5%;
+}
 .tabla_vuelos_administrador{
     width: 90%;
     background:   rgb(38, 5, 112);
@@ -266,8 +272,14 @@ box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
     padding: 15px;
     z-index: 100;
 }
+/* _________________________________tabla de vuelos__________________________ */
+
 
 /*_______________________________ servicios________________________________- */
+.servicioo{
+    display: none;
+    margin-top: 5%;
+}
 .servicios{
    
     display: flex;
@@ -297,3 +309,43 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
  text-align: center;
  
 }
+/*_______________________________ servicios________________________________- */
+
+
+/* --------------------------------- quienes somos --------------------------- */
+.somoos{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- quienes somos --------------------------- */
+
+
+/* --------------------------------- tiquetes--------------------------- */
+.tiquee{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- tiquetes--------------------------- */
+
+
+/* --------------------------------- viajes --------------------------- */
+.viajee{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- viajes --------------------------- */
+
+
+/* --------------------------------- precios --------------------------- */
+.precioo{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- precios --------------------------- */
+
+/* --------------------------------- alojamiento --------------------------- */
+.aloja{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- alojamiento --------------------------- */
