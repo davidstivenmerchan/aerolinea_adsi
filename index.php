@@ -16,17 +16,20 @@
 <body>
     <header>
         <div class="encabezado">
-            <img src="imagenes/sinfondo.png" alt="titulo">
-            <a href="Html/iniciosesion.html"><h2 class="iniciar">INICIAR SESION</h2><hr class="linea_iniciar"></a>
-
-            <a href="Html/registro.html"><h2 class="registrarse">REGISTRARSE</h2></a>
-
+            <div class="funci">
+            <a href="Html/iniciosesion.html" class="iniciar">✈INICIAR SESION</a>
+            <a href="Html/registro.html"class="registrarse"> ✈REGISTRARSE</a>
+            </div>
+            <div class="infor">
+            <img class="logo" src="imagenes/avionlog.jpg.png" alt="">
+            <h2 class="titulo_bienvenida">BIENVENIDOS A NUESTRA AEROLINEA</h2>
+            </div>
         </div>
 
         <div class="encabezado2">
             <nav>
                 <ul>
-                    <li><b>INICIO</b></li>
+                    <li id="inicioo"><b>INICIO</b></li>
                     <li id="vuelos"><b>VUELOS</b></li>
                     <li id="tiquetes"><b>TIQUETES</b></li>
                     <li id="viajes"><b>MIS VIAJES</b></li>
@@ -44,8 +47,6 @@
     <img class="logo_dos" src="imagenes/logoage.png" alt="">
 <div class="contenido">
     <div class="inicio" id="inicio">
-        <img class="logo" src="imagenes/sinfondo.png" alt="">
-        <h2 class="titulo_bienvenida">BIENVENIDOS A NUESTRA AEROLINEA</h2>
 
         <div class="slider">
             <ul>
@@ -162,7 +163,6 @@
 
 
     <footer>
-        <img src="imagenes/sinfondo.png" alt="logo">
         <p> &copy; aerolinea-adsi</p>
     </footer>
 </div>
