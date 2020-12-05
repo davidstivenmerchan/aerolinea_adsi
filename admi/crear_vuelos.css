@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+form{
+    width: 500px;
+    height: 450px;
+    border: solid rgb(38, 5, 112);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+form input{
+    margin: 10px 120px;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+form input:hover{
+    border:solid tomato;
+    border-radius: 10px;
+}
