@@ -1,3 +1,6 @@
+<?php
+    require_once('../php/validacion.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +17,11 @@
                 <h3>AEROLINEA</h3>
             </div>    
                 <ul class="header-autogestion">
-                    <button class="btn_header">Cerrar Sesion</button>
+                    <button class="btn_header"> <a href="../php/cerrar_sesion.php">Cerrar Sesion</a> </button>
                 </ul>
             <div class="menu1">
                 <div class="admin">
-                    <h4>CLIENTES</h4>
+                    <h4>SECCION DE CLIENTES</h4>
                 </div>
             </div>      
         </div>
@@ -47,17 +50,7 @@
         </div>
         <hr>
         <div class="modulos">
-            <div class="modulo1"><button class="btn_modulo"><a href="#">Clientes</a></button></div>
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="vuelos.php">Vuelos</a>
-                        <ul class="submenu">
-                            <li><a href="crear_vuelos.html">Crear Vuelos</a></li>
-                            <li><a href="modificar_vuelos.php">Editar Vuelos</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <div class="modulo1"><button class="btn_modulo"><a href="#">COMPRAR TIQUETES</a></button></div>
         </div>
         <hr>
         <div class="footer">

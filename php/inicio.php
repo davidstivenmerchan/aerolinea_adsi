@@ -15,6 +15,7 @@
         //Hacemos una toma de decision para que se logee el usuario correctamente
         if($fila)
         {
+                $_SESSION['cc'] = $fila['documento'];
                 $_SESSION['nombre'] = $fila['nombre'];
                 $_SESSION['apellido'] = $fila['apellido'];
                 $_SESSION['telefono'] = $fila['celular'];
@@ -28,9 +29,9 @@
                     header('Location: ../admi/admin.php');
                     exit();
                 }
-                elseif ($_SESSION['id_tip_usu'] == "") 
+                elseif ($_SESSION['id_tip_usu'] == 2) 
                 {
-                    header('Location: ../cliente/index.html');
+                    header('Location: ../cliente/index.php');
                     exit();
                 }
                 else
