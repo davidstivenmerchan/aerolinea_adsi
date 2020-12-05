@@ -1,13 +1,12 @@
 *{
+    overflow-x: hidden;
+}
+body{
     padding: 0;
     margin: 0;
     font-family: 'Saira Condensed', sans-serif;
-    overflow-x: hidden;
-   
 }
-body{
-    margin: 0%;
-} 
+ 
 /*--------------------------------- encabezado---------------------------- */
 .encabezado{
     display: flex;
@@ -18,15 +17,45 @@ body{
 }
 .encabezado img{
     width: 10%;
-    height: 95%;
+    height: 90%;
 }
 .encabezado h2{
-    margin-left: 200px;
+    margin-left: 0px;
     margin-top: 22px;
     color: white;
+    font-size: 25px;
+    width: 80%;
 }
-.encabezado a{
-    text-decoration: none;
+
+.funci{
+    margin-left: 3%;
+    display: flex;
+    margin-top: 1.2%;
+    width: 35%;
+}
+
+.iniciar{
+    color: white;
+    font-size: 25px;
+    text-decoration-color: black;
+    width:40%;
+}
+
+
+.registrarse{
+    color: white;
+    font-size: 25px;
+    text-decoration-color: black;
+    margin-right: 10px;
+}
+.infor{
+    display: flex;
+    width: 40%;
+    margin-left: 20%;
+}
+
+.infor img{
+    width: 15%;
 }
 
 .triangulo{
@@ -46,19 +75,24 @@ body{
     height: 50px;
     font-size: 20px;
 }
+
 .encabezado2 nav ul{
+    margin-top: 3px;
     display: flex;
     text-align: center;
-    padding:10px 30px;
+    margin-right: 120px;
+    padding: 0px 1px;
 } 
 .encabezado2 nav ul li{
     list-style: none;
     cursor: pointer;
     margin-left: 4%;
+    padding: 5px;
+    border-radius: 10px;
 } 
 .encabezado2 nav ul li:hover{
-
-    background-color: blue;
+    color: white;
+    background-color:rgb(38, 5, 112);
 }
 .logo_dos{
     position: absolute;
@@ -68,16 +102,6 @@ body{
     transition: 0.1s;
 }
 
-.titulo_bienvenida{
-    margin-top: 30px;
-    margin-left: 100px;
-}
-.logo{
-    position: absolute;
-    width: 35px;
-    top:165px;
-    left: 60px;
-}
 
 .linea_iniciar{
     width: 122px;
@@ -94,14 +118,7 @@ footer{
     background: rgb(38, 5, 112);
     width: 100%;
     margin-top: 10%;
-}
-footer img{
-    width: 100px;
-}
-footer p{
-    color: white;
-    margin-left: 10px;
-
+    height: 100px;
 }
 
 
