@@ -1,3 +1,6 @@
+<?php
+    require_once('../php/validacion.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,7 @@
                 <h3>AEROLINEA</h3>
             </div>    
                 <ul class="header-autogestion">
-                    <button class="btn_header">Cerrar Sesion</button>
+                    <button class="btn_header"> <a href="../php/cerrar_sesion.php">Cerrar Sesion</a> </button>
                 </ul>
             <div class="menu1">
                 <div class="admin">
