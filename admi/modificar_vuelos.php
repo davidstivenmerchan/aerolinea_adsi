@@ -40,7 +40,7 @@ while($row=mysqli_fetch_assoc($resultados)){?>
 </div>
 
 </body>
-<script src="confirmacion.js"></script>
+<!-- <script src="confirmacion.js"></script> -->
 </html>
 
 
