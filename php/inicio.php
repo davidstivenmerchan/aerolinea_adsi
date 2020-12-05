@@ -3,7 +3,7 @@
 
     if($_POST["enviar"]){
         //Declaramos las variables para almacenar los datos digitados
-        $documento = $_POST["user"];
+        $documento = $_POST["usu"];
         $clave = $_POST["contra"]; 
 
         //Hacemos la consulta para que me seleccione los datos en la BD y valide
@@ -22,7 +22,7 @@
             
             //Hacemos la toma de decision para determinar quien se va a logear
             if($_SESSION['id_tip_usu'] == 1){
-                header('Location: ..admi/admin.html');
+                header('Location: ../admi/admin.html');
                 exit();
             }
             elseif ($_SESSION['id_tip_usu'] == 2) {
