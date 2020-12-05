@@ -16,13 +16,13 @@
         if($fila)
         {
                 $_SESSION['cc'] = $fila['documento'];
-                $_SESSION['nombre'] = $fila['nom_user'];
-                $_SESSION['apellido'] = $fila['ape_user'];
+                $_SESSION['nombre'] = $fila['nombre'];
+                $_SESSION['apellido'] = $fila['apellido'];
                 $_SESSION['telefono'] = $fila['celular'];
                 $_SESSION['direccion'] = $fila['direccion'];
                 $_SESSION['email'] = $fila['correo'];
                 $_SESSION['id_tip_usu'] = $fila['id_tip_user'];
-                
+
                 //Hacemos la toma de decision para determinar quien se va a logear
                 if($_SESSION['id_tip_usu'] == 1)
                 {

@@ -1,5 +1,20 @@
 <?php
     require_once('../php/validacion.php');
+    require_once('../php/coneccion.php');
+
+    $con = "SELECT * FROM usuario";
+    $que = mysqli_query($mysqli,$con);
+    $datos = mysqli_fetch_assoc($que);
+
+    $consultika = "SELECT * FROM tipo_user";
+    $query2 = mysqli_query($mysqli,$consultika);
+    $fila2 = mysqli_fetch_assoc($query2);
+
+    if($fila2){
+        
+        $_SESSION['nom_tip_user'] = $fila2['nom_tip_user'];
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +37,7 @@
                 </ul>
             <div class="menu1">
                 <div class="admin">
-                    <h4>ADMINISTRADOR: EVER MORENO</h4>
+                    <h4><?php echo $_SESSION['nom_tip_user'];?>: <?php echo $_SESSION['nombre'];?><?php echo $_SESSION['apellido'];?></h4>
                 </div>
             </div>      
         </div>
@@ -39,9 +54,9 @@
         <hr>
         <div>
             <div class="info">
-                <p class="text-admin">NOMBRE: ACA VA EL NOMBRE QUE VIENE DEL PHP</p>
-                <p class="text-admin">CORREO: ACA VIENE EL CORREO DEL PHP</p>
-                <P class="text-admin">TIPO USUARIO: ACA VIENE EL TIPO DE USUARIO PHP</P>
+                <p class="text-admin">NOMBRE: <?php echo $_SESSION['nombre'];?></p>
+                <p class="text-admin">CORREO: <?php echo $_SESSION['email'];?></p>
+                <P class="text-admin">TIPO USUARIO: <?php echo $_SESSION['nom_tip_user'];?></P>
             </div>
             <button class="btn_editar">EDITAR INFORMACION</button>
             <div class="facebook"><i class="facebooki fab fa-facebook-f"></i><p>Facebook</p></div>
