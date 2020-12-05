@@ -15,7 +15,7 @@
     $resulltado = mysqli_query($mysqli, $consulta_crear_vuelo);
     if($resulltado){
 
-        echo '<script> alert ("usuario creado exitosamente,");
+        echo '<script> alert ("VUELO creado exitosamente,");
         window.history.go(-2); </script>';
         exit;
         ;
