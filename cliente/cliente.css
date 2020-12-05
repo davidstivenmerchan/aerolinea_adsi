@@ -1,0 +1,386 @@
+*{
+    font-family: 'Saira Condensed', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    height: 125px;
+
+}
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    margin: -80px 90px;
+    width: 250px;
+}
+
+.header-autogestion {
+    margin: 37px 1171px;
+    width: 164px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background-color: #EEE;
+    border-bottom-left-radius: 24px;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    height: 48px;
+}
+
+h3{
+    font-size: 25px;
+    color: rgb(38, 5, 112);
+    margin: 27px 19px;
+}
+
+.btn_header{
+    border: none;
+    margin: 10px;
+}
+
+.btn_header:hover{
+    cursor: pointer;
+}
+
+.btn_menu{
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.btn_menu:hover{
+    cursor: pointer;
+    color: rgb(38, 5, 112);
+}
+
+.menu2{
+    width: 600px;
+}
+
+.admin{
+    width: 300px;
+    height: 73px;
+    font-size: 18px;
+    margin: 56px 535px;
+}
+
+.imagen-slider{
+    margin: 6px 14px;
+    width: 1320px;
+    height: 380px;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 10s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.sli{
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.modulos{
+    height: 150px;
+}
+
+.modulo1{
+    margin: 20px 279px;
+    width: 300px;
+    height: 100px;  
+}
+
+.modulo2{
+    margin: -120px 797px;
+    width: 300px;
+    height: 100px;
+}
+
+.btn_modulo{
+    margin: 25px 77px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border: 2px solid black;
+    background: rgb(38, 5, 112);
+    color: white;
+}
+
+.btn_modulo:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(38, 5, 112, 1);
+    transition: all 0.2s ease;
+}
+
+.navegacion{
+	width: 150px;
+    margin: -93px 735px;
+    background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+    padding: 15px 20px;
+    color: #f5ecec;
+    text-decoration: none;
+    background: rgb(38, 5, 112);
+    border: 2px solid black;
+    width: 102px;
+    text-align: center;
+}
+
+.menu li a:hover{
+    color: black;
+    background: white;
+    box-shadow: 0 4px 16px rgba(38, 5, 112, 1);
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: rgb(38, 5, 112);
+    width: 100%;
+    margin: 0 auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+    padding: 15px;
+    margin: 0px auto;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.facebook{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    transition: 0.5s;
+    display: flex;
+    padding: 10px;
+}
+.facebook p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.instagram{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.instagram p{
+    margin-left: 30px;
+    font-size: 15px;
+    color: white;
+}
+.twitter{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.twitter p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.youtube{
+    width: 400px;
+    height: 50px;
+    background: rgb(38, 5, 112);
+    margin-top: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-left: 1285px;
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+}
+.youtube p{
+    margin-left: 25px;
+    font-size: 15px;
+    color: white;
+}
+.facebook:hover{
+    margin-left: 1200px;
+
+}
+.instagram:hover{
+    margin-left: 1200px;
+
+}
+.twitter:hover{
+    margin-left: 1200px;
+
+}
+.youtube:hover{
+    margin-left: 1200px;
+
+}
+.facebooki{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(238, 235, 235);;
+}
+.instagrami{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(231, 229, 229);;
+}
+.twitteri{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(235, 232, 231);;
+}
+.youtubei{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(230, 230, 230);;
+}
+
+.footer{
+    border: 2px solid black;
+    height: 150px;
+    background: rgb(38, 5, 112);
+}
+
+.titulo-footer{
+    font-size: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.img{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 88px;
+}
+
+.img2{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 533px;
+}
+
+.img3{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    margin: 76px 975px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+.info{
+    width: 1000px;
+    height: 150px;
+    border: 2px solid black;
+    position: absolute;
+    margin: 70px 100px;
+    background: rgb(38, 5, 112);
+    border-radius: 30px;
+}
+
+.text-admin{
+    margin: 20px 35px;
+    color: white;
+}
+
+.btn_editar{
+    position: absolute;
+    margin: 175px 863px;
+    width: 190px;
+    padding: 5px;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 40px;
+    color: white;
+    background: rgb(38, 5, 112);
+}
+
+.btn_editar:hover{
+    color: black;
+    background: white;
+}
