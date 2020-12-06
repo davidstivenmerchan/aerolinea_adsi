@@ -236,6 +236,39 @@
     <!--------------------------------- quienes somos --------------------------->
     <div class="somoos" id="somoos">
     <h2 class="titulo_bienvenida">QUIENES SOMOS</h2>
+    
+    <div style="display:flex">
+
+        <div style="margin-left:40px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+            Quisquam natus explicabo blanditiis accusamus sunt, doloremque <br> 
+            error, ducimus odit tempora illum fugiat? Quisquam eligendi culpa <br> 
+            dolorem dolore facere, quo vitae quibusdam. Lorem ipsum dolor sit <br> 
+            amet consectetur adipisicing elit. Ducimus maiores iste delectus <br>
+            quis placeat distinctio, nam odit aperiam repellendus, totam itaque. <br>
+            Est repellat cum ex alias nihil, quasi maxime officiis! Lorem ipsum <br>
+            dolor sit amet consectetur adipisicing elit. Iusto voluptates autem <br>
+            voluptas asperiores vel exercitationem tenetur, ea voluptatum <br>
+            perspiciatis sint dignissimos excepturi, labore rerum ipsa iste <br>
+            optio laudantium aspernatur amet. Lorem ipsum dolor sit <br> 
+            amet consectetur, adipisicing elit. A maiores impedit temporibus <br>
+            consequuntur voluptates, repellat inventore vitae nisi, quia mollitia, <br>
+            quaerat iure dolorum molestiae quo itaque similique expedita eveniet deserunt.</p>
+
+            <h4>Nuestro correo: aerolinea_adsi@aerolinea.com </h4>
+            <i class="facebooki fab fa-facebook-f"></i>
+            <i class="instagrami fab fa-instagram"></i>
+            <i class="twitteri fab fa-twitter"></i>
+            <i class="youtubei fab fa-youtube"></i>
+
+        </div>
+        <div class="cmapa">
+            <h3 class="mapa">Nuestra Ubicacion</h3>
+             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.9267852351095!2d-75.14139028573702!3d4.424742045221769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cfeec1207e17%3A0xf234a9dcf773668c!2sAeropuerto%20perales%20de%20ibague!5e0!3m2!1ses!2sco!4v1607294626083!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    
+    </div>
+   
     </div>
      <!--------------------------------- quienes somos --------------------------->
 
