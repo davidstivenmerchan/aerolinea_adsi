@@ -129,4 +129,5 @@ mostraraloja.addEventListener('click', (e)=>{
     tiquetes.style.display="none";
     servicios.style.display="none";
     viajes.style.display="none";
+    somos.style.display="none";
 })
