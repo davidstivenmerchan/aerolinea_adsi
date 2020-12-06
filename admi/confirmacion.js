@@ -1,5 +1,5 @@
 function confirmacion(e){
-    if (confirm("¿Estas seguro de Eliminar este Vuelo?")){
+    if (confirm("¿Estas seguro de Eliminar o editar este Vuelo?")){
         return true;
     }else{
             e.preventDefault();

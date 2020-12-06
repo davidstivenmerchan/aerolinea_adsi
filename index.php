@@ -97,20 +97,104 @@
      <!--------------------------------- vuelos--------------------------->
     
       <!--------------------------------- +tiquetes --------------------------->
-    <div class="tiquee" id="tiquee">
+    <div class="tiquee" id="tiquee" >
     <h2 class="titulo_bienvenida">TIQUETES</h2>
+
+   
+    <div class="btique">BUSCA TUS TIQUETES</div>
+    <form action="" class="tiquetesb">
+                <input type="text" class="ntiquete" placeholder="ingrese su cedula">
+                <input type="submit" class="envitiquetes" value="BUSCAR">
+
+
+    
+    </form>
+
+    <img class="imgtiquetes"src="imagenes/logoage.png" alt="">
+    
     </div>
      <!--------------------------------- +tiquetes --------------------------->
 
      <!--------------------------------- viajes --------------------------->
-    <div class="viajee" id="viaje">
+    <div class="tiquee" id="viaje">
     <h2 class="titulo_bienvenida">MIS VIAJES</h2>
+    <div class="btique">BUSCA TUS VIAJES</div>
+    <form action="" class="tiquetesb">
+                <input type="text" class="ntiquete" placeholder="ingrese su cedula">
+                <input type="submit" class="envitiquetes" value="BUSCAR">
+
+
+    
+    </form>
+
+    <img class="imgtiquetes"src="imagenes/avionlog.jpg.png" alt="">
+
     </div>
     <!--------------------------------- viajes --------------------------->
 
     <!--------------------------------- precios --------------------------->
     <div class="precioo" id="precioo">
     <h2 class="titulo_bienvenida">PRECIOS</h2>
+    <table class="tablaprecios">
+        <tr>
+            <th>ORIGEN</th>
+            <th>DESTINO</th>
+            <th>PRIMERA CLASE</th>
+            <th>SEGUNDA CLASE</th>
+            <th>TERCERA CLASE</th>
+        </tr>    
+    
+    
+        <tr>
+            <td>Colombia</td>
+            <td>Alemania</td>
+            <td>$5'000.000</td>
+            <td>$4'940.000</td>
+            <td>$4'845.000</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>Francia</td>
+            <td>$3'580.000</td>
+            <td>$3'040.000</td>
+            <td>$2'980.000</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>Ecuador</td>
+            <td>$1'580.000</td>
+            <td>$1'040.000</td>
+            <td>$980.000</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>Argentina</td>
+            <td>$2'680.000</td>
+            <td>$2'640.000</td>
+            <td>$1'920.000</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>Japon</td>
+            <td>$9'880.000</td>
+            <td>$9'140.000</td>
+            <td>$7'980.000</td>
+        </tr>
+        <tr>
+            <td>Venezuela</td>
+            <td>Francia</td>
+            <td>$3'480.000</td>
+            <td>$3'777.000</td>
+            <td>$2'380.000</td>
+        </tr>
+        <tr>
+            <td>Ecuador</td>
+            <td>Canada</td>
+            <td>$4'980.000</td>
+            <td>$3'940.000</td>
+            <td>$2'780.000</td>
+        </tr>
+    </table>
     </div>
     
     <div class="activi" id="acti">

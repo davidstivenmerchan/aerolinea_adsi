@@ -21,8 +21,8 @@ $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
     <div class="elem_TI">LUGAR DESTINO</div>
     <div class="elem_TI">LUGAR SALIDA</div>
     <div class="elem_TI">AEROPUERTO SALIDA</div>
-    <div class="elem_TI">AERO DESTINO</div>
     <div class="elem_TI">ESTADO</div>
+    <div class="elem_TI">AERO DESTINO</div>
     <div class="elem_TI">VALIDAR</div>
 <?php $resultados = mysqli_query($mysqli,$consulta_vuelos);
 
