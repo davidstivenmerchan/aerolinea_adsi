@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-12-2020 a las 18:47:20
+-- Tiempo de generación: 06-12-2020 a las 18:12:35
 -- Versión del servidor: 10.4.16-MariaDB
 -- Versión de PHP: 7.4.12
 
@@ -31,29 +31,30 @@ CREATE TABLE `clientes` (
   `documento` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
-  `id_vuelo` int(11) NOT NULL
+  `id_vuelo` int(11) NOT NULL,
+  `tiquetes` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`) VALUES
-(20169774, 'Carlos Jair', 'Tona Pericles', 23445),
-(35684254, 'Miku', 'Izayoi', 2332),
-(64149685, 'Kurumi', 'Tokisaki', 996),
-(80167550, 'Alice ', 'Zuberg', 996),
-(87515336, 'Eolyne', 'Herlentz', 23445),
-(117985323, 'Jeffrey J.', 'Stivers', 44453),
-(548729430, 'Thomas M.', 'Jarvis', 3342),
-(556525877, 'Tony ', 'Stark', 1013),
-(585896662, 'Mr. Robot', 'Android', 1013),
-(641568484, 'Cristiano', 'Ronaldo', 1013),
-(756812553, 'Tobiichi', 'Origami', 2332),
-(1002340430, 'Yatogami', 'Tohka', 44453),
-(1005690960, 'Kirigaya', 'Kazuto', 996),
-(1151690960, 'Kotori', 'Itsuka', 2332),
-(2145869699, 'Rikka', 'Takanashi', 3342);
+INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`, `tiquetes`) VALUES
+(20169774, 'Carlos Jair', 'Tona Pericles', 23445, 1),
+(35684254, 'Miku', 'Izayoi', 2332, 2),
+(64149685, 'Kurumi', 'Tokisaki', 996, 3),
+(80167550, 'Alice ', 'Zuberg', 996, 4),
+(87515336, 'Eolyne', 'Herlentz', 23445, 5),
+(117985323, 'Jeffrey J.', 'Stivers', 44453, 6),
+(548729430, 'Thomas M.', 'Jarvis', 3342, 7),
+(556525877, 'Tony ', 'Stark', 1013, 8),
+(585896662, 'Mr. Robot', 'Android', 1013, 9),
+(641568484, 'Cristiano', 'Ronaldo', 1013, 1),
+(756812553, 'Tobiichi', 'Origami', 2332, 2),
+(1002340430, 'Yatogami', 'Tohka', 44453, 5),
+(1005690960, 'Kirigaya', 'Kazuto', 996, 3),
+(1151690960, 'Kotori', 'Itsuka', 2332, 4),
+(2145869699, 'Rikka', 'Takanashi', 3342, 6);
 
 -- --------------------------------------------------------
 
