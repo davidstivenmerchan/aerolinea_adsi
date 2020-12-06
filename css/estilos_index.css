@@ -403,3 +403,36 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
 .titulo_bienvenida{
     margin-left: 40px;
 }
+/* .tablaprecios{
+    margin-left: 50px;
+    border: solid rgb(38, 5, 112);
+}
+.tablaprecios th, td {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid ;
+    border-spacing: 0;
+ } */
+ table {
+    width: 90%;
+    border: 3px solid rgb(38, 5, 112);
+    margin-left: 40px;
+ }
+ th, td {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+ caption {
+    padding: 0.3em;
+    color: #fff;
+     background: #000;
+ }
+ th {
+    background: #eee;
+ }
