@@ -66,7 +66,7 @@
         </div>
         <hr>
         <div class="modulos">
-            <div class="modulo1"><button class="btn_modulo"><a href="#">Clientes</a></button></div>
+            <div class="modulo1"><button class="btn_modulo"><a href="customers/index.html">Clientes</a></button></div>
             <nav class="navegacion">
                 <ul class="menu">
                     <li><a href="vuelos.php">Vuelos</a>
