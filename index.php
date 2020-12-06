@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos_index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="icon" href="imagenes/logo.ico">
+    <link rel="icon" href="imagenes/logoage.png">
     <title>aerolinea-adsi</title>
 </head>
 <body>
