@@ -37,7 +37,7 @@
                 </ul>
             <div class="menu1">
                 <div class="admin">
-                    <h4><?php echo $_SESSION['nom_tip_user'];?>: <?php echo $_SESSION['nombre'];?><?php echo $_SESSION['apellido'];?></h4>
+                    <h4><?php echo $_SESSION['nom_tip_user'];?>: <?php echo $_SESSION['nombre'];?> <?php echo $_SESSION['apellido'];?></h4>
                 </div>
             </div>      
         </div>

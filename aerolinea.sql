@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2020 a las 18:42:23
+-- Tiempo de generación: 05-12-2020 a las 18:47:20
 -- Versión del servidor: 10.4.16-MariaDB
 -- Versión de PHP: 7.4.12
 
@@ -31,37 +31,29 @@ CREATE TABLE `clientes` (
   `documento` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
-  `id_vuelo` int(11) NOT NULL,
-  `tiquetes` int(11) NOT NULL
+  `id_vuelo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`, `tiquetes`) VALUES
-(20169774, 'Carlos Jair', 'Tona Pericles', 23445, 1),
-(35684254, 'Miku', 'Izayoi', 2332, 2),
-(64149685, 'Kurumi', 'Tokisaki', 996, 3),
-(80167550, 'Alice ', 'Zuberg', 996, 4),
-(87515336, 'Eolyne', 'Herlentz', 23445, 5),
-(100980890, 'Light ', 'Yagami', 996, 1),
-(117985323, 'Jeffrey J.', 'Stivers', 44453, 6),
-(245811548, 'Adolf', 'Hitler', 1013, 8),
-(415269635, 'Juan Camilo', 'Perez Rodríguez', 1111, 2),
-(546548646, 'Ana', 'Frank', 3342, 1),
-(548729430, 'Thomas M.', 'Jarvis', 3342, 7),
-(556525877, 'Tony ', 'Stark', 1013, 8),
-(585896662, 'Mr. Robot', 'Android', 1013, 9),
-(641568484, 'Cristiano', 'Ronaldo', 1013, 1),
-(753124569, 'Gabriel', 'Miller', 2332, 5),
-(756812553, 'Tobiichi', 'Origami', 2332, 2),
-(789696969, 'Tanjiro', 'Kamado', 44453, 4),
-(1002340430, 'Yatogami', 'Tohka', 44453, 5),
-(1005690960, 'Kirigaya', 'Kazuto', 996, 3),
-(1151690960, 'Kotori', 'Itsuka', 2332, 4),
-(1587459965, 'Ichinose', 'Chizuru', 23445, 2),
-(2145869699, 'Rikka', 'Takanashi', 3342, 6);
+INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`) VALUES
+(20169774, 'Carlos Jair', 'Tona Pericles', 23445),
+(35684254, 'Miku', 'Izayoi', 2332),
+(64149685, 'Kurumi', 'Tokisaki', 996),
+(80167550, 'Alice ', 'Zuberg', 996),
+(87515336, 'Eolyne', 'Herlentz', 23445),
+(117985323, 'Jeffrey J.', 'Stivers', 44453),
+(548729430, 'Thomas M.', 'Jarvis', 3342),
+(556525877, 'Tony ', 'Stark', 1013),
+(585896662, 'Mr. Robot', 'Android', 1013),
+(641568484, 'Cristiano', 'Ronaldo', 1013),
+(756812553, 'Tobiichi', 'Origami', 2332),
+(1002340430, 'Yatogami', 'Tohka', 44453),
+(1005690960, 'Kirigaya', 'Kazuto', 996),
+(1151690960, 'Kotori', 'Itsuka', 2332),
+(2145869699, 'Rikka', 'Takanashi', 3342);
 
 -- --------------------------------------------------------
 
@@ -153,11 +145,10 @@ CREATE TABLE `vuelos` (
 INSERT INTO `vuelos` (`id_vuelo`, `hora_programada`, `destino`, `aeropuerto_salida`, `aeropuerto_llegada`, `estado`, `lugar_salida`) VALUES
 (996, '20:00:00', 'BOGOTÁ', 'Tegel (BER)', 'El Dorado (BOG)', 'salida', 'BERLÍN'),
 (1013, '18:00:00', 'SEÚL, COREA', 'OLAYA HERRERA', 'Incheon (ICN)', 'Llegada', 'MEDELLÍN, COL'),
-(1111, '17:30:00', 'ORLANDO', 'El Dorado (BOG)', 'Orlando (MCO)', 'Salida', 'BOGOTÁ,COL'),
-(2332, '13:31:32', 'TOKIO, JAPÓN', 'El Dorado (BOG)', 'Narita (NRT)', 'salida', 'BOGOTÁ, COL'),
-(3342, '06:00:00', 'PARÍS, FRANCIA', 'OLAYA HERRERA', 'París (CDG)', 'llegada', 'BOGOTÁ, COL'),
-(23445, '04:40:50', 'TORONTO, CANADÁ', 'Narita (NRT)', 'Toronto (YYZ)', 'Llegada', 'TOKIO, JPN'),
-(44453, '04:44:40', 'MADRID, ESPAÑA', 'CDMX (MEX)', 'Barajas (MAD)', 'salida', 'CDMX, MEX');
+(2332, '13:31:32', 'TOKIO, JAPÓN', 'El Dorado (BOG)', 'Narita (NRT)', 'salida', 'BOGOTÁ'),
+(3342, '06:00:00', 'francia', 'tunja', 'rrewsd', 'llegada', 'bucaramanga'),
+(23445, '04:40:50', 'canada', 'das', 'das', 'das', 'colombia'),
+(44453, '04:44:40', 'alemania', 'el dorado', 'brueed', 'salida', 'bogota');
 
 --
 -- Índices para tablas volcadas
