@@ -97,8 +97,21 @@
      <!--------------------------------- vuelos--------------------------->
     
       <!--------------------------------- +tiquetes --------------------------->
-    <div class="tiquee" id="tiquee">
+    <div class="tiquee" id="tiquee" >
     <h2 class="titulo_bienvenida">TIQUETES</h2>
+
+   
+    <div class="btique">BUSCA TUS TIQUETES</div>
+    <form action="" class="tiquetesb">
+                <input type="text" class="ntiquete">
+                <input type="submit" class="envitiquetes" value="BUSCAR">
+
+
+    
+    </form>
+
+    <img class="imgtiquetes"src="imagenes/logoage.png" alt="">
+    
     </div>
      <!--------------------------------- +tiquetes --------------------------->
 
@@ -164,6 +177,7 @@
 
     <footer>
         <p> &copy; aerolinea-adsi</p>
+        <img src="imagenes/logoage.png" alt="" >
     </footer>
 </div>
 </body>

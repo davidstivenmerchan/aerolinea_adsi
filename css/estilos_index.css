@@ -120,6 +120,11 @@ footer{
     width: 100%;
     margin-top: 10%;
     height: 100px;
+    display: flex;
+}
+footer img{
+    width: 100px;
+    margin-left: 1120px;
 }
 
 
@@ -343,6 +348,34 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
     display: none;
     margin-top: 5%;
 }
+
+.tiquetesb{
+    margin-left: 100px;
+}
+.btique{
+    margin-left: 100px;
+}
+.ntiquete{
+    width: 400px;
+    height: 35px;
+    border: solid rgb(38, 5, 112);
+}
+.envitiquetes{
+    height: 35px;
+    background: rgb(38, 5, 112);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.envitiquetes:hover {
+    background: white;
+    color: rgb(38, 5, 112);
+}
+.imgtiquetes{
+    margin-top: 15px;
+    margin-left: 200px;
+    width: 300px;
+}
 /* --------------------------------- tiquetes--------------------------- */
 
 
@@ -367,3 +400,6 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
     margin-top: 5%;
 }
 /* --------------------------------- alojamiento --------------------------- */
+.titulo_bienvenida{
+    margin-left: 40px;
+}
