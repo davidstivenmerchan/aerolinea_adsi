@@ -1,4 +1,5 @@
 <?php
+   
     require_once('../php/validacion.php');
     require_once('../php/coneccion.php');
 

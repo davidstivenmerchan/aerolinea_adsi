@@ -10,5 +10,5 @@
     {
         die("Fallo la conexion con Mysql" . mysqli_connect_errno());
     }
-    session_start(); 
+    session_start();
 ?>
