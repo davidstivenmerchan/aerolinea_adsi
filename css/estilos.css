@@ -1,22 +1,44 @@
 
 /*____________________________________________estilo formulario inicio de sesion_____________________________________*/
-
-.formu{
-    margin: auto;
-    width: 300px;
-    height: 250px;
-    border: 4px solid blueviolet;
+body{
+    background-image: url(../imagenes/fondologin.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.container
+{
+    width: 27%;
+    height: 90%;
+    margin-left: 60%;
+    padding: 0.5% 0.5%;
     border-radius: 20px;
+    margin-top: 4%;
+    text-align: center;
 }
+.container img{
+    width: 65%;
+    height: 45%;
+    z-index: 11;
+}
+h1{
+    margin-top: 20%;
 
+}
 .formu{
-    margin-top: 200px;
+    
+    margin-top: -23%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width:90%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 2%;
+    text-align: center;
     padding: 10px;
+    
 }
 
-form{
-    margin-top: 20px;
-}
 
 input{
     margin: 15px 19px;
@@ -24,7 +46,8 @@ input{
     padding: 5px;
     border-radius: 10px;
     border: none;
-    border: 1px solid gray;
+    border: 2px solid purple;
+    text-align: center;
 }
 
 input:hover{
@@ -33,32 +56,42 @@ input:hover{
 
 label{
     margin: 20px 20px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+}
+.opc{
+    display: flex;
 }
 
 #env{
     margin-top: 8px;
     width: 100px;
     margin: 10px 100px;
-    background-color: cadetblue;
+    background-color: rgb(38, 5, 112);
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 15px;
     color: white;
     padding: 5px 5px;
     border: none;
+    cursor: pointer;
 }
 
 #env:hover{
-    color: black;
-    background-color: goldenrod;
+    color: white;
+    background-color: rgba(122, 4, 231, 1);
     box-shadow: 0 4px 16px rgba(122, 4, 231, 1);
     transition: all 0.2s ease;
 }
 
-a.registro{
-    margin: 17px;
+.regreso{
+    color: white;
+    margin-right: 10%;
+}
+.registro{
+    color: white;
+    width: 60%;
 }
 
 /*_____________________________________________________________________________________________________________________*/

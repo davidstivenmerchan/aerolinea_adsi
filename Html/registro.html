@@ -8,8 +8,13 @@
 </head>
 <body>
     <div class="container">
+        <img src="../imagenes/logoage.png" alt="">
+        
         <div class="formu">
             <form action="../php/registro.php" method="POST" id="form">
+                <h1>REGISTRO DE USUARIO</h1>
+                <div class="conten">
+                <div class="fila">
                 <label for="user">Documento</label>
                 <input type="text" id="usu" name="doc" placeholder="Ingrese su usuario o Documento" required autocomplete="off">
                 <label for="nombre">Nombre completo</label>
@@ -18,13 +23,20 @@
                 <input type="text" id="ape" name="ape" placeholder="Ingrese su apellido completo" required autocomplete="off">
                 <label for="direccion">Direccon</label>
                 <input type="text" id="direc" name="dire" placeholder="Ingrese su direccion" required autocomplete="off">
+                </div>
+                <div class="fila">
                 <label for="correo">Correo</label>
                 <input type="text" id="corr" name="correo" placeholder="Ingrese su Correo" required autocomplete="off">
                 <label for="celular">Celular</label>
                 <input type="text" id="cel" name="celular" placeholder="Ingrese su Celular" required autocomplete="off">
                 <label for="password">Password</label>
                 <input type="password" id="contra" name="contra" placeholder="Ingrese su contraseña" required autocomplete="off">
-                <input type="submit" name="enviar" id="env" value="Ingresar">
+                <label for="direccion">Ciudad</label>
+                <input type="text" id="direc" name="dire" placeholder="Ingrese su cuidad local" required autocomplete="off">
+                </div>
+                </div>
+                <a href="../index.php" class="regreso"><i>Regresar</i></a>
+                <input type="submit" name="enviar" id="env" value="Registrar">
             </form>
         </div>
     </div>
