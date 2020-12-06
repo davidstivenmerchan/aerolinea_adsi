@@ -163,7 +163,13 @@
 
 
     <footer>
-        <p> &copy; aerolinea-adsi</p>
+            <img class="logoos" src="imagenes/logoage.png" alt="">
+            <div class="text">
+            <p> &copy;<I> FLY-ADSI </I></p>
+            <p><I> ADSI 2060060</I></p>
+            </div>
+             <img class="logooo" src="imagenes/avionlog.jpg.png" alt="">
+        
     </footer>
 </div>
 </body>
