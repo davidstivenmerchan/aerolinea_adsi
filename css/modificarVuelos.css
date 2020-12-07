@@ -9,7 +9,7 @@
     margin: 50px auto;
 
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(7,1fr);
     grid-auto-rows: 50px;
     -webkit-box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
@@ -17,7 +17,7 @@ box-shadow: -1px 0px 16px 2px rgba(0,0,0,0.75);
 }
 .titulo{
     grid-column-start:1 ;
-    grid-column-end: 9;
+    grid-column-end: 8;
     text-align: center;
     background: rgb(250, 80, 63);
     color: white;
