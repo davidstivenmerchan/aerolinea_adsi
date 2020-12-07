@@ -457,5 +457,108 @@ table {
 .titulo_bienvenida{
     margin-left: 40px;
 }
+.hoteles1 h5{
+    text-align: center;
+   
+}
+.hoteles2 h5{
+    text-align: center;
+   
+}
+.hoteles3 h5{
+    text-align: center;
+   
+}
+.hoteles4 h5{
+    text-align: center;
+   
+}
+.hoteles5 h5{
+    text-align: center;
+   
+}
+.hoteles1 div p{
+    margin-top: 200px;
+    background: rgba(38, 5, 112,0.5);
+    transition: 0.5s;
+    color: white;
+}
+.hoteles2 div p{
+    margin-top: 200px;
+    background: rgba(38, 5, 112,0.5);
+    transition: 0.5s;
+    color: white;
+}
+.hoteles3 div p{
+    margin-top: 200px;
+    background: rgba(38, 5, 112,0.5);
+    transition: 0.5s;
+    color: white;
+}
+.hoteles4 div p{
+    margin-top: 200px;
+    background: rgba(38, 5, 112,0.5);
+    transition: 0.5s;
+    color: white;
+}
+.hoteles5 div p{
+    margin-top: 200px;
+    background: rgba(38, 5, 112,0.5);
+    transition: 0.5s;
+    color: white;
+}
 
- 
+
+.div1:hover .texto1{
+    margin-top: 2px;
+}
+.div2:hover .texto2{
+    margin-top: 2px;
+}
+.div3:hover .texto3{
+    margin-top: 2px;
+}
+.div4:hover .texto4{
+    margin-top: 2px;
+}
+.div5:hover .texto5{
+    margin-top: 2px;
+}
+
+.hoteles1 div{
+    background: url('../imagenes/hotel1.jpg');
+    background-size: cover ;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.hoteles2 div{
+    background: url('../imagenes/hotel2.jpg');
+    background-size: cover ;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.hoteles3 div{
+    background: url('../imagenes/hotel3.jpg');
+    background-size: cover ;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.hoteles4 div{
+    background: url('../imagenes/hotel4.jpg');
+    background-size: cover ;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.hoteles5 div{
+    background: url('../imagenes/hotel5.jpg');
+    background-size: cover ;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+

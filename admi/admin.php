@@ -71,7 +71,7 @@
                 <ul class="menu">
                     <li><a href="vuelos.php">Vuelos</a>
                         <ul class="submenu">
-                            <li><a href="crear_vuelos.html">Crear Vuelos</a></li>
+                            <li><a href="crear_vuelos.php">Crear Vuelos</a></li>
                             <li><a href="modificar_vuelos.php">Editar Vuelos</a></li>
                         </ul>
                     </li>
