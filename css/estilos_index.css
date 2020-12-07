@@ -361,6 +361,17 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
     display: none;
     margin-top: 5%;
 }
+.mapa{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.somos p{
+    text-align: justify;
+}
+.cmapa{
+    border: 3px solid rgb(38, 5, 112);
+    margin-left: 40px;
+}
 /* --------------------------------- quienes somos --------------------------- */
 
 
@@ -413,29 +424,7 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
     display: none;
     margin-top: 5%;
 }
-/* --------------------------------- precios --------------------------- */
-
-/* --------------------------------- alojamiento --------------------------- */
-.aloja{
-    display: none;
-    margin-top: 5%;
-}
-/* --------------------------------- alojamiento --------------------------- */
-.titulo_bienvenida{
-    margin-left: 40px;
-}
-/* .tablaprecios{
-    margin-left: 50px;
-    border: solid rgb(38, 5, 112);
-}
-.tablaprecios th, td {
-    width: 10%;
-    text-align: center;
-    vertical-align: top;
-    border: 1px solid ;
-    border-spacing: 0;
- } */
- table {
+table {
     width: 90%;
     border: 3px solid rgb(38, 5, 112);
     margin-left: 40px;
@@ -457,14 +446,16 @@ box-shadow: 0px 25px 5px -12px rgba(0,0,0,0.75);
  th {
     background: #eee;
  }
- .mapa{
-     margin-left: 50px;
-     margin-right: 50px;
- }
- .somos p{
-     text-align: justify;
- }
- .cmapa{
-     border: 3px solid rgb(38, 5, 112);
-     margin-left: 40px;
- }
+/* --------------------------------- precios --------------------------- */
+
+/* --------------------------------- alojamiento --------------------------- */
+.aloja{
+    display: none;
+    margin-top: 5%;
+}
+/* --------------------------------- alojamiento --------------------------- */
+.titulo_bienvenida{
+    margin-left: 40px;
+}
+
+ 
