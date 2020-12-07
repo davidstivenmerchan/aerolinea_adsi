@@ -5,7 +5,7 @@
     
     
    
-    $consul_comprar = " UPDATE tiquetes SET id_vuelo = '$idvuelo' where id_tiquete= MAX";
+    $consul_comprar = "UPDATE tiquetes SET id_vuelo = '$idvuelo'";
     $resultador =mysqli_query($mysqli, $consul_comprar);
 
     if($resultador){

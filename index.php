@@ -276,6 +276,17 @@
       <!--------------------------------- alojamiento --------------------------->
     <div class="aloja" id="aloja">
     <h2 class="titulo_bienvenida">ALOJAMIENTO</h2>
+    <div style="display:flex">
+        <div class="hoteles1"><h5>Economico</h5><div class="div1"><p class="texto1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles2"><h5>Valor</h5><div class="div2"><p class="texto2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles3"><h5>Calidad</h5><div class="div3"><p class="texto3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles4"><h5>Superior</h5><div class="div4"><p class="texto4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles5"><h5>Exepcional</h5><div class="div5"><p class="texto5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+    
+
+    </div>
+    <br>
+
     </div>
     <!--------------------------------- alojamiento --------------------------->
 
