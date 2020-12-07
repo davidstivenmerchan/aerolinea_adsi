@@ -19,16 +19,17 @@ require_once('../php/validacion.php');
             <h1>¡COMPRA TUS TIQUETES!</h1>
             <select name="compra" id="">
                 <option value="">Elija un Destino</option>
-                <option value="1">Alemania</option>
-                <option value="2">Rusia</option>
-                <option value="3">China</option>
-                <option value="4">España</option>
+                <option value="1">Suiza</option>
+                <option value="2">China</option>
+                <option value="3">Corea Del Sur</option>
+                <option value="4">Singapur</option>
             </select>
             <select name="clase" id="">
                 <option value="">Elija Una Clase</option>
-                <option value="baja">Baja</option>
-                <option value="media">Media</option>
-                <option value="alta">Alta</option>
+                <option value="1">Economica</option>
+                <option value="2">Premium Economy</option>
+                <option value="3">Ejecutiva/Bussines</option>
+                <option value="4">Primera Clase</option>
             </select>
             <div class="pasajeross">
                 <label for="pasajeros">Numero de pasajeros</label>
