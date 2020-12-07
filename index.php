@@ -102,12 +102,9 @@
 
    
     <div class="btique">BUSCA TUS TIQUETES</div>
-    <form action="" class="tiquetesb">
+    <form action="tiquetes.html" class="tiquetesb">
                 <input type="text" class="ntiquete" placeholder="ingrese su cedula">
                 <input type="submit" class="envitiquetes" value="BUSCAR">
-
-
-    
     </form>
 
     <img class="imgtiquetes"src="imagenes/logoage.png" alt="">
