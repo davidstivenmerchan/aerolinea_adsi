@@ -28,8 +28,8 @@ $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
 
 while($row=mysqli_fetch_assoc($resultados)){?>
     <input type="text" class="elem" value="<?php echo $row["id_vuelo"];?>" style="color:black" name="idvuelo">
-    <input type="text" class="elem" value="<?php echo $row["hora_programada"];?>" style="color:black" name="hora">
-    <input type="text" class="elem" value="<?php echo $row["destino"];?>" style="color:black" name="destino">
+    <input type="text" class="elem" value="<?php echo $row["hora_salida"];?>" style="color:black" name="hora">
+    <input type="text" class="elem" value="<?php echo $row["hora_llegada"];?>" style="color:black" name="destino">
     <input type="text" class="elem" value="<?php echo $row["lugar_salida"];?>" style="color:black" name="lsalida">
     <input type="text" class="elem" value="<?php echo $row["aeropuerto_salida"];?>" style="color:black" name="asalida">
     <input type="text" class="elem" value="<?php echo $row["aeropuerto_llegada"];?>" style="color:black" name="estado">

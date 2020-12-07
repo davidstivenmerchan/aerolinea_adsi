@@ -15,9 +15,10 @@ $consulta_vuelos = "SELECT * FROM vuelos";
 <body>
 <div class="tabla_vuelos_administrador">
     <div class="titulo">VUELOS</div>
+    <div class="titulo">VUELOS</div>
     <div class="elem_TI">N° VUELO</div>
-    <div class="elem_TI">HORA PROGRAMADA</div>
-    <div class="elem_TI">LUGAR DESTINO</div>
+    <div class="elem_TI">HORA SALIDA</div>
+    <div class="elem_TI">HORA LLEGADA</div>
     <div class="elem_TI">LUGAR SALIDA</div>
     <div class="elem_TI">AEROPUERTO SALIDA</div>
     <div class="elem_TI">AEROPUERTO DESTINO</div>
@@ -27,8 +28,8 @@ $consulta_vuelos = "SELECT * FROM vuelos";
 
 while($row=mysqli_fetch_assoc($resultados)){?>
     <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
-    <div class="elem"><?php echo $row["hora_programada"]; ?> </div>
-    <div class="elem"><?php echo $row["destino"]; ?> </div>
+    <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
+    <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
     <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
     <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
     <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
