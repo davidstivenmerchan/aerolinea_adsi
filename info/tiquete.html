@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tiquete Info</title>
+</head>
+<body>
+    <div class="certificado">
+        <div class="encabezado">
+            <h2>TIQUETE</h2>
+        </div>
+        <hr>
+        <p><b>FLY ADSI</b></p>
+        <p>NUMERO DE SILLAS : </p>
+        <p>ID_TIQUETE : </p>
+        <p>DESTINO: </p>
+        <p>NUMERO DE VUELO: </p>
+        <p>DOCUMENTO: </p>
+        <p>NOMBRE VIAJERO: </p>
+        <p>APELLIDO VIAJERO: </p>
+        <p>FECHA Y HORA: </p>
+        <hr>
+        <button id="pdf">Imprimir</button>
+    </div>
+</body>
+    <script>
+        const boton = document.getElementById("pdf");
+        boton.addEventListener("click", ()=>{
+            boton.style.display = "none";
+            setTimeout(()=>{
+                window.print();    
+            }, 1000);
+        });
+    </script>
+</html>
