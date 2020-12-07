@@ -3,10 +3,9 @@
 
     $idvuelo = $_GET["id"];
     
-    $max = "SELECT MAX(id_tiquete) FROM tiquetes";
-    $query7 = mysqli_query($mysqli,$max);
-    $dat = mysqli_fetch_assoc($query7);
-
+    
+    $consul_comprar = "UPDATE tiquetes SET id_vuelo = '$idvuelo'";
+    $resultador =mysqli_query($mysqli, $consul_comprar);
 
     $string = implode($dat);
 

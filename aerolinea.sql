@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2020 a las 18:42:23
--- Versión del servidor: 10.4.16-MariaDB
--- Versión de PHP: 7.4.12
+-- Tiempo de generación: 07-12-2020 a las 15:19:47
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,44 +25,55 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `clientes`
+-- Estructura de tabla para la tabla `aeropuerto`
 --
 
-CREATE TABLE `clientes` (
-  `documento` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
-  `id_vuelo` int(11) NOT NULL,
-  `tiquetes` int(11) NOT NULL
+CREATE TABLE `aeropuerto` (
+  `id_aeropuerto` int(11) NOT NULL,
+  `nom_aeropuerto` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `clientes`
+-- Volcado de datos para la tabla `aeropuerto`
 --
 
-INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`, `tiquetes`) VALUES
-(20169774, 'Carlos Jair', 'Tona Pericles', 23445, 1),
-(35684254, 'Miku', 'Izayoi', 2332, 2),
-(64149685, 'Kurumi', 'Tokisaki', 996, 3),
-(80167550, 'Alice ', 'Zuberg', 996, 4),
-(87515336, 'Eolyne', 'Herlentz', 23445, 5),
-(100980890, 'Light ', 'Yagami', 996, 1),
-(117985323, 'Jeffrey J.', 'Stivers', 44453, 6),
-(245811548, 'Adolf', 'Hitler', 1013, 8),
-(415269635, 'Juan Camilo', 'Perez Rodríguez', 1111, 2),
-(546548646, 'Ana', 'Frank', 3342, 1),
-(548729430, 'Thomas M.', 'Jarvis', 3342, 7),
-(556525877, 'Tony ', 'Stark', 1013, 8),
-(585896662, 'Mr. Robot', 'Android', 1013, 9),
-(641568484, 'Cristiano', 'Ronaldo', 1013, 1),
-(753124569, 'Gabriel', 'Miller', 2332, 5),
-(756812553, 'Tobiichi', 'Origami', 2332, 2),
-(789696969, 'Tanjiro', 'Kamado', 44453, 4),
-(1002340430, 'Yatogami', 'Tohka', 44453, 5),
-(1005690960, 'Kirigaya', 'Kazuto', 996, 3),
-(1151690960, 'Kotori', 'Itsuka', 2332, 4),
-(1587459965, 'Ichinose', 'Chizuru', 23445, 2),
-(2145869699, 'Rikka', 'Takanashi', 3342, 6);
+INSERT INTO `aeropuerto` (`id_aeropuerto`, `nom_aeropuerto`) VALUES
+(1, 'Aeropuerto de Zurich (Suiza)'),
+(2, 'Aeropuerto Internacional de Hong Kong (China)'),
+(3, 'Aeropuerto Internacional de Incheon (Corea del Sur)'),
+(4, 'Aeropuerto de Changi (Singapur)');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `clase`
+--
+
+CREATE TABLE `clase` (
+  `id_clase` int(11) NOT NULL,
+  `nom_clase` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `clase`
+--
+
+INSERT INTO `clase` (`id_clase`, `nom_clase`) VALUES
+(1, 'Economica'),
+(2, 'Premium Economy'),
+(3, 'Ejecutiva/Business'),
+(4, 'Primera Clase');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `forma_de_pago`
+--
+
+CREATE TABLE `forma_de_pago` (
+  `id_for_pag` int(11) NOT NULL,
+  `nom_for_pag` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -70,8 +82,8 @@ INSERT INTO `clientes` (`documento`, `nombre`, `apellido`, `id_vuelo`, `tiquetes
 --
 
 CREATE TABLE `tipo_docu` (
-  `id_tip_docu` int(12) NOT NULL,
-  `nom_tip_docu` varchar(60) NOT NULL
+  `id_tip_docu` int(11) NOT NULL,
+  `nom_tip_docu` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -79,9 +91,9 @@ CREATE TABLE `tipo_docu` (
 --
 
 INSERT INTO `tipo_docu` (`id_tip_docu`, `nom_tip_docu`) VALUES
-(1, 'Cedula Ciudadania'),
-(2, 'Tarjeta de Identidad'),
-(3, 'Registro Civil');
+(1, 'Cedula De Ciudadania'),
+(2, 'Tarjeta De Identidad'),
+(3, 'Cedula Extranjera');
 
 -- --------------------------------------------------------
 
@@ -90,8 +102,8 @@ INSERT INTO `tipo_docu` (`id_tip_docu`, `nom_tip_docu`) VALUES
 --
 
 CREATE TABLE `tipo_user` (
-  `id_tip_user` int(12) NOT NULL,
-  `nom_tip_user` varchar(60) NOT NULL
+  `id_tip_user` int(11) NOT NULL,
+  `nom_tip_user` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -99,8 +111,22 @@ CREATE TABLE `tipo_user` (
 --
 
 INSERT INTO `tipo_user` (`id_tip_user`, `nom_tip_user`) VALUES
-(1, 'Administrador'),
-(2, 'usuario');
+(1, 'administrador'),
+(2, 'cliente');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tiquetes`
+--
+
+CREATE TABLE `tiquetes` (
+  `id_tiquete` int(11) NOT NULL,
+  `id_vuelo` int(12) NOT NULL,
+  `documento` int(12) NOT NULL,
+  `num_pasajeros` int(11) NOT NULL,
+  `id_clase` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -109,26 +135,24 @@ INSERT INTO `tipo_user` (`id_tip_user`, `nom_tip_user`) VALUES
 --
 
 CREATE TABLE `usuario` (
-  `documento` int(15) UNSIGNED NOT NULL,
-  `nom_user` varchar(60) NOT NULL,
-  `ape_user` varchar(60) NOT NULL,
-  `celular` int(14) NOT NULL,
-  `direccion` varchar(70) NOT NULL,
+  `documento` int(12) NOT NULL,
+  `usuario` varchar(30) NOT NULL,
+  `nom_user` varchar(30) NOT NULL,
+  `ape_user` varchar(30) NOT NULL,
+  `celular` bigint(1) NOT NULL,
+  `direccion` varchar(50) NOT NULL,
   `correo` varchar(50) NOT NULL,
-  `clave` varchar(30) NOT NULL,
-  `id_tip_docu` int(12) NOT NULL,
-  `id_tip_user` int(12) NOT NULL
+  `clave` varchar(15) NOT NULL,
+  `id_tip_docu` int(11) NOT NULL,
+  `id_tip_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`documento`, `nom_user`, `ape_user`, `celular`, `direccion`, `correo`, `clave`, `id_tip_docu`, `id_tip_user`) VALUES
-(565675, 'David', 'Merchan', 312313, 'mz d casa 6 ', 'shun@misn', '6677', 1, 2),
-(3121123, 'andres', 'moreno', 312313121, 'mz 5 casa 23 ', 'evermo@mis.dom', '123', 2, 2),
-(66271236, 'Jose ', '', 31123131, 'Mz k b esas', 'kirito@mis', '9900', 1, 2),
-(123123131, 'oscar', 'llanos', 314413123, 'Mz n casa 4 esmerala', 'ojllansoq@misn.com', '123456', 1, 1);
+INSERT INTO `usuario` (`documento`, `usuario`, `nom_user`, `ape_user`, `celular`, `direccion`, `correo`, `clave`, `id_tip_docu`, `id_tip_user`) VALUES
+(1108, 'stefa21', 'Estefania', 'Herrera', 3219542300, 'Carrera 5 ibague', 'eherrera@misena.edu.co', 'tefa21', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -137,38 +161,44 @@ INSERT INTO `usuario` (`documento`, `nom_user`, `ape_user`, `celular`, `direccio
 --
 
 CREATE TABLE `vuelos` (
-  `id_vuelo` int(5) NOT NULL DEFAULT 0,
-  `hora_programada` time DEFAULT NULL,
-  `destino` varchar(15) DEFAULT NULL,
-  `aeropuerto_salida` varchar(15) DEFAULT NULL,
-  `aeropuerto_llegada` varchar(15) DEFAULT NULL,
-  `estado` varchar(15) DEFAULT NULL,
-  `lugar_salida` varchar(15) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_vuelo` int(12) NOT NULL,
+  `hora_salida` time NOT NULL,
+  `hora_llegada` time NOT NULL,
+  `aeropuerto_salida` int(11) NOT NULL,
+  `aeropuerto_llegada` int(11) NOT NULL,
+  `estado` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `vuelos`
 --
 
-INSERT INTO `vuelos` (`id_vuelo`, `hora_programada`, `destino`, `aeropuerto_salida`, `aeropuerto_llegada`, `estado`, `lugar_salida`) VALUES
-(996, '20:00:00', 'BOGOTÁ', 'Tegel (BER)', 'El Dorado (BOG)', 'salida', 'BERLÍN'),
-(1013, '18:00:00', 'SEÚL, COREA', 'OLAYA HERRERA', 'Incheon (ICN)', 'Llegada', 'MEDELLÍN, COL'),
-(1111, '17:30:00', 'ORLANDO', 'El Dorado (BOG)', 'Orlando (MCO)', 'Salida', 'BOGOTÁ,COL'),
-(2332, '13:31:32', 'TOKIO, JAPÓN', 'El Dorado (BOG)', 'Narita (NRT)', 'salida', 'BOGOTÁ, COL'),
-(3342, '06:00:00', 'PARÍS, FRANCIA', 'OLAYA HERRERA', 'París (CDG)', 'llegada', 'BOGOTÁ, COL'),
-(23445, '04:40:50', 'TORONTO, CANADÁ', 'Narita (NRT)', 'Toronto (YYZ)', 'Llegada', 'TOKIO, JPN'),
-(44453, '04:44:40', 'MADRID, ESPAÑA', 'CDMX (MEX)', 'Barajas (MAD)', 'salida', 'CDMX, MEX');
+INSERT INTO `vuelos` (`id_vuelo`, `hora_salida`, `hora_llegada`, `aeropuerto_salida`, `aeropuerto_llegada`, `estado`) VALUES
+(987, '09:15:00', '01:12:00', 2, 3, 'por salir'),
+(1234, '09:08:00', '01:08:00', 4, 2, 'retrasado'),
+(12345, '23:22:00', '02:30:00', 1, 4, '');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `clientes`
+-- Indices de la tabla `aeropuerto`
 --
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`documento`),
-  ADD KEY `id_vuelo` (`id_vuelo`);
+ALTER TABLE `aeropuerto`
+  ADD PRIMARY KEY (`id_aeropuerto`);
+
+--
+-- Indices de la tabla `clase`
+--
+ALTER TABLE `clase`
+  ADD PRIMARY KEY (`id_clase`);
+
+--
+-- Indices de la tabla `forma_de_pago`
+--
+ALTER TABLE `forma_de_pago`
+  ADD PRIMARY KEY (`id_for_pag`);
 
 --
 -- Indices de la tabla `tipo_docu`
@@ -183,35 +213,93 @@ ALTER TABLE `tipo_user`
   ADD PRIMARY KEY (`id_tip_user`);
 
 --
+-- Indices de la tabla `tiquetes`
+--
+ALTER TABLE `tiquetes`
+  ADD PRIMARY KEY (`id_tiquete`),
+  ADD KEY `documento` (`documento`),
+  ADD KEY `id_clase` (`id_clase`);
+
+--
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`documento`),
-  ADD KEY `fk_tip_docu` (`id_tip_docu`),
+  ADD KEY `id_tip_docu` (`id_tip_docu`),
   ADD KEY `id_tip_user` (`id_tip_user`);
 
 --
 -- Indices de la tabla `vuelos`
 --
 ALTER TABLE `vuelos`
-  ADD PRIMARY KEY (`id_vuelo`);
+  ADD PRIMARY KEY (`id_vuelo`),
+  ADD KEY `aeropuerto_salida` (`aeropuerto_salida`),
+  ADD KEY `aeropuerto_llegada` (`aeropuerto_llegada`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `aeropuerto`
+--
+ALTER TABLE `aeropuerto`
+  MODIFY `id_aeropuerto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `clase`
+--
+ALTER TABLE `clase`
+  MODIFY `id_clase` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `forma_de_pago`
+--
+ALTER TABLE `forma_de_pago`
+  MODIFY `id_for_pag` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo_docu`
+--
+ALTER TABLE `tipo_docu`
+  MODIFY `id_tip_docu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo_user`
+--
+ALTER TABLE `tipo_user`
+  MODIFY `id_tip_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `tiquetes`
+--
+ALTER TABLE `tiquetes`
+  MODIFY `id_tiquete` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
 --
 
 --
--- Filtros para la tabla `clientes`
+-- Filtros para la tabla `tiquetes`
 --
-ALTER TABLE `clientes`
-  ADD CONSTRAINT `clientes_ibfk_1` FOREIGN KEY (`id_vuelo`) REFERENCES `vuelos` (`id_vuelo`);
+ALTER TABLE `tiquetes`
+  ADD CONSTRAINT `tiquetes_ibfk_1` FOREIGN KEY (`documento`) REFERENCES `usuario` (`documento`),
+  ADD CONSTRAINT `tiquetes_ibfk_2` FOREIGN KEY (`id_clase`) REFERENCES `clase` (`id_clase`);
 
 --
 -- Filtros para la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD CONSTRAINT `fk_tip_docu` FOREIGN KEY (`id_tip_docu`) REFERENCES `tipo_docu` (`id_tip_docu`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_tip_user`) REFERENCES `tipo_user` (`id_tip_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_tip_docu`) REFERENCES `tipo_docu` (`id_tip_docu`),
+  ADD CONSTRAINT `usuario_ibfk_2` FOREIGN KEY (`id_tip_user`) REFERENCES `tipo_user` (`id_tip_user`);
+
+--
+-- Filtros para la tabla `vuelos`
+--
+ALTER TABLE `vuelos`
+  ADD CONSTRAINT `vuelos_ibfk_1` FOREIGN KEY (`aeropuerto_salida`) REFERENCES `aeropuerto` (`id_aeropuerto`),
+  ADD CONSTRAINT `vuelos_ibfk_2` FOREIGN KEY (`aeropuerto_llegada`) REFERENCES `aeropuerto` (`id_aeropuerto`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
