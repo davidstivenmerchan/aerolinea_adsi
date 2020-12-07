@@ -53,3 +53,6 @@ form input{
     height: 20px;
     cursor: pointer;
 }
+form p{
+    color: white;
+}

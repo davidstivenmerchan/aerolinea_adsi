@@ -1,3 +1,8 @@
+<?php
+require_once('../php/validacion.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,21 +15,20 @@
 <body>
     <div class="for">
         
-        <form action="tiquete.php" method="POST" name="tiquetesF">
+        <form action="proceso_compra.php" method="POST" name="tiquetesF">
             <h1>¡COMPRA TUS TIQUETES!</h1>
-            <select name="" id="">
+            <select name="compra" id="">
                 <option value="">Elija un Destino</option>
                 <option value="1">Alemania</option>
-                <option value="2">Australia</option>
-                <option value="3">Canada</option>
-                <option value="4">Marruecos</option>
-                <option value="5">Rusia</option>
+                <option value="2">Rusia</option>
+                <option value="3">China</option>
+                <option value="4">España</option>
             </select>
-            <select name="" id="">
+            <select name="clase" id="">
                 <option value="">Elija Una Clase</option>
-                <option value="1">Baja</option>
-                <option value="2">Media</option>
-                <option value="3">Alta</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
             </select>
             <div class="pasajeross">
                 <label for="pasajeros">Numero de pasajeros</label>
@@ -33,8 +37,12 @@
                 <input type="text" name="pasajeros" value="1" >
                 <input type="button" value="+" onclick="tiquetesF.pasajeros.value++">
                 </div>
+                <input type="hidden" value="<?php echo $_SESSION['cc'];?>" name="cc">
+             
             </div>
-               <input class="siguiente" type="submit" value="Siguente">
+               <input class="siguiente" type="submit" value="Siguente" name="enviar">
+
+            <p>El tiquete se comprara en nombre de la cedula <?php echo $_SESSION['cc'];?> </p>
         </form>
     </div>
 </body>

@@ -50,7 +50,7 @@
         </div>
         <hr>
         <div class="modulos">
-            <div class="modulo1"><button class="btn_modulo"><a href="tiquetes.html">COMPRAR TIQUETES</a></button></div>
+            <div class="modulo1"><button class="btn_modulo"><a href="tiquetes.php">COMPRAR TIQUETES</a></button></div>
         </div>
         <hr>
         <div class="footer">
