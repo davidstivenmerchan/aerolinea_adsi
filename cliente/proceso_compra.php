@@ -3,7 +3,7 @@
     require_once('../php/coneccion.php');
     $compra = $_POST['compra'];
     $consultatiquetes = "SELECT id_vuelo, hora_salida, hora_llegada, aeropuerto_salida, aeropuerto_llegada, estado, nom_aeropuerto 
-    FROM vuelos, aeropuerto where aeropuerto.id_aeropuerto=vuelos.aeropuerto_llegada and id_aeropuerto='$compra'";
+    FROM vuelos, aeropuerto where aeropuerto.id_aeropuerto=vuelos.aeropuerto_llegada and aeropuerto_llegada='$compra'";
     
 ?>
 <?php
