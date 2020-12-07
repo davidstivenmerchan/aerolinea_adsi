@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: 'Saira Condensed', sans-serif;
+}
+.for{
+    margin:40px 400px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+form{
+    margin-top: 40px;
+    width: 580px;
+    height: 500px;
+    background: rgb(38, 5, 112);
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid rgb(250, 80, 63);
+   
+}
+form select{
+    width: 400px;
+    font-family: 'Saira Condensed', sans-serif;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+form input{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 150px;
+}
+.pasajeross{
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 160px;
+    text-align: right;
+    color: white;
+}
+.incre{
+    margin-left: -30px;
+    
+}
+.siguiente{
+    margin-left: 210px;
+    background: rgb(250, 80, 63);
+    color: white;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
