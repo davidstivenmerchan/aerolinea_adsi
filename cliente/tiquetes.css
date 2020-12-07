@@ -28,11 +28,36 @@ form select{
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 40px;
     margin-left: 80px;
+    border: 3px solid rgb(250, 80, 63);
+    border-radius: 10px;
 }
-form input{
+.resta{
     margin-top: 20px;
     margin-left: 80px;
     width: 150px;
+    background: gray;
+    cursor: pointer;
+}
+.suma{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 150px;
+    background: gray;
+    cursor: pointer;
+}
+.resta:hover{
+    background: rgb(250, 80, 63);
+}
+.suma:hover{
+    background: rgb(250, 80, 63);
+}
+.pasa{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 200px;
+    text-align: center;
+    
+    
 }
 .pasajeross{
     margin-top: 10px;
@@ -46,13 +71,22 @@ form input{
     
 }
 .siguiente{
-    margin-left: 210px;
+    margin-top: 100px;
+    margin-left: 190px;
     background: rgb(250, 80, 63);
     color: white;
     border: none;
-    height: 20px;
+    height: 40px;
     cursor: pointer;
+    width: 200px;
+}
+.siguiente:hover{
+    background: gray;
 }
 form p{
     color: white;
+}
+p{
+    margin-top: 25px;
+    text-align: center;
 }

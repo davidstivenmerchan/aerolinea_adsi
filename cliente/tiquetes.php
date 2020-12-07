@@ -12,7 +12,7 @@ require_once('../php/validacion.php');
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Comprar Tiquetes</title>
 </head>
-<body>
+<body> 
     <div class="for">
         
         <form action="proceso_compra.php" method="POST" name="tiquetesF">
@@ -34,16 +34,16 @@ require_once('../php/validacion.php');
             <div class="pasajeross">
                 <label for="pasajeros">Numero de pasajeros</label>
                <div class="incre">
-                <input type="button" value="-" onclick="tiquetesF.pasajeros.value--"> 
-                <input type="text" name="pasajeros" value="1" >
-                <input type="button" value="+" onclick="tiquetesF.pasajeros.value++">
+                <input type="button" value="-" onclick="tiquetesF.pasajeros.value--" class="resta"> 
+                <input type="text" name="pasajeros" value="1" class="pasa">
+                <input type="button" value="+" onclick="tiquetesF.pasajeros.value++" class="suma">
                 </div>
                 <input type="hidden" value="<?php echo $_SESSION['cc'];?>" name="cc">
              
             </div>
                <input class="siguiente" type="submit" value="Siguente" name="enviar">
 
-            <p>El tiquete se comprara en nombre de la cedula <?php echo $_SESSION['cc'];?> </p>
+            <p> &copy; El tiquete se comprara en nombre de la cedula <?php echo $_SESSION['cc'];?> </p>
         </form>
     </div>
 </body>
