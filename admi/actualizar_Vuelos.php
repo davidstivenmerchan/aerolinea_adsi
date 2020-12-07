@@ -1,7 +1,7 @@
 
 <?php
 require_once('../php/coneccion.php');
-$id = $_GET['id'];
+$id = $_GET['id']; //este id viene de modificar_vuelos.php 
 $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
 ?>
 <!DOCTYPE html>
@@ -9,7 +9,8 @@ $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<!--Consumo una api de google para las fuentes-->
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="../css/modificarVuelos.css">
 <title>Panel de edicion de vuelos</title>
 </head>
@@ -24,9 +25,9 @@ $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
     <div class="elem_TI">AERO DESTINO</div>
     <div class="elem_TI">ESTADO</div>
     <div class="elem_TI">VALIDAR</div>
-<?php $resultados = mysqli_query($mysqli,$consulta_vuelos);
+<?php $resultados = mysqli_query($mysqli,$consulta_vuelos); //Almacena la consulta y la coneccion
 
-while($row=mysqli_fetch_assoc($resultados)){?>
+while($row=mysqli_fetch_assoc($resultados)){?><!--Hago un ciclo para que me muestre lo que tenga la BD-->
     <input type="text" class="elem" value="<?php echo $row["id_vuelo"];?>" style="color:black" name="idvuelo">
     <input type="text" class="elem" value="<?php echo $row["hora_programada"];?>" style="color:black" name="hora">
     <input type="text" class="elem" value="<?php echo $row["destino"];?>" style="color:black" name="destino">

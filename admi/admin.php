@@ -12,8 +12,8 @@
     $fila2 = mysqli_fetch_assoc($query2);
 
     if($fila2){
-        
-        $_SESSION['nom_tip_user'] = $fila2['nom_tip_user'];
+        //Almacena en una variable la consulta de fila para determinar que clase de usuario es
+        $_SESSION['nom_tip_user'] = $fila2['nom_tip_user']; 
 
     }
 ?>
@@ -55,7 +55,7 @@
         <hr>
         <div>
             <div class="info">
-                <p class="text-admin">NOMBRE: <?php echo $_SESSION['nombre'];?></p>
+                <p class="text-admin">NOMBRE: <?php echo $_SESSION['nombre'];?></p><!--El SESSION se pone para-->
                 <p class="text-admin">CORREO: <?php echo $_SESSION['email'];?></p>
                 <P class="text-admin">TIPO USUARIO: <?php echo $_SESSION['nom_tip_user'];?></P>
             </div>
