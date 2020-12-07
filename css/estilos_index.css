@@ -225,12 +225,28 @@ footer{
 /*-------------------------------------- actividades---------------------------- */
 .activi{
     display: none;
-    margin-top: 5%;
+    margin-top: 4.5%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.activi h2{
+    font-size: 55px;
+    margin-top: 1%;
+    color:  black;
+    text-shadow: 4px  2px 2px rgb(38, 5, 112);
+    font-family: 'Courier New';
+}
+.texi{
+    font-size: 25px;
+    margin-top: 1%;
+    color:  black;
+    text-shadow: 1px  1px 1px rgb(38, 5, 112);
+    font-family: 'Courier New';
 }
 .contenedor_todo_actividades{
     display: flex;
     width: 100%px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .actividades{
     width: 300px;
