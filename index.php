@@ -1,6 +1,8 @@
 <?php
     require_once('php/coneccion.php');
-    $consulta = "SELECT * FROM vuelos"
+    $consulta = "SELECT id_vuelo, hora_salida, hora_llegada, aeropuerto_salida, aeropuerto_llegada, estado, nom_aeropuerto 
+    FROM vuelos, aeropuerto where aeropuerto.id_aeropuerto=vuelos.aeropuerto_llegada";
+    /* $consulta = "SELECT * FROM vuelos " */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,7 +77,6 @@
                 <div class="elem_TI">N° VUELO</div>
                 <div class="elem_TI">HORA SALIDA</div>
                 <div class="elem_TI">HORA LLEGADA</div>
-                <div class="elem_TI">LUGAR SALIDA</div>
                 <div class="elem_TI">AEROPUERTO SALIDA</div>
                 <div class="elem_TI">AEROPUERTO DESTINO</div>
                 <div class="elem_TI">ESTADO</div>
@@ -85,9 +86,8 @@
                 <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
-                <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
-                <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
-                <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
                 <div class="elem"><?php echo $row["estado"]; ?> </div>
 
                 <?php } mysqli_free_result($resultadoss);?>
