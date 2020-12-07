@@ -1,9 +1,8 @@
 <?php
     require_once('php/coneccion.php');
     $consulta = "SELECT * FROM vuelos INNER JOIN aeropuerto ON vuelos.aeropuerto_salida = aeropuerto.id_aeropuerto";
-    /* "SELECT id_vuelo, hora_salida, hora_llegada, aeropuerto_salida, aeropuerto_llegada, estado, nom_aeropuerto 
-    FROM vuelos, aeropuerto where aeropuerto.id_aeropuerto=vuelos.aeropuerto_llegada" */;
-    /* $consulta = "SELECT * FROM vuelos " */
+    $query= mysqli_query($mysqli, $consulta);
+    $fila = mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,8 +86,8 @@
                 <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
-                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
-                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
                 <div class="elem"><?php echo $row["estado"]; ?> </div>
 
                 <?php } mysqli_free_result($resultadoss);?>
@@ -201,6 +200,7 @@
     <!--------------------------------- actividades --------------------------->
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
+        <p class="texi">Planea desde ya tu viaje y conoce el mundo</p>
         <div class="contenedor_todo_actividades">
             <div class="actividades"><img src="imagenes/actividad1.jpg" alt=""><h4>Islas Maldivas</h4><p>Un archipiélago remoto del Atlántico Sur.</p><br><hr><div class="precio_actividad"><h5>$8'000.000</h5></div></div>
             <div  class="actividades"><img src="imagenes/actividad2.jpg" alt=""><h4>Paris</h4><p>La capital de Francia, es una importante ciudad europea</p><br><hr><div class="precio_actividad"><h5>$4'000.000</h5></div></div>
