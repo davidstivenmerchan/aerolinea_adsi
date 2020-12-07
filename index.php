@@ -196,7 +196,8 @@
         </tr>
     </table>
     </div>
-    
+    <!--------------------------------- precios --------------------------->
+    <!--------------------------------- actividades --------------------------->
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
         <div class="contenedor_todo_actividades">
@@ -214,7 +215,7 @@
             <div  class="actividades"><img src="imagenes/actividad10.jpg" alt=""><h4>Holanda</h4><p>Un país de Europa conocido por su paisaje plano de canales</p><br><hr><div class="precio_actividad"><h5>$5'560.000</h5></div></div>
         </div>
     </div>
-    <!--------------------------------- precios --------------------------->
+    <!--------------------------------- actividades--------------------------->
 
     <!--------------------------------- servicios --------------------------->
     <div class="servicioo" id="servicioo">
