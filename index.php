@@ -1,6 +1,8 @@
 <?php
     require_once('php/coneccion.php');
-    $consulta = "SELECT * FROM vuelos"
+    $consulta = "SELECT id_vuelo, hora_salida, hora_llegada, aeropuerto_salida, aeropuerto_llegada, estado, nom_aeropuerto 
+    FROM vuelos, aeropuerto where aeropuerto.id_aeropuerto=vuelos.aeropuerto_llegada";
+    /* $consulta = "SELECT * FROM vuelos " */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +20,7 @@
         <div class="encabezado">
             <div class="funci">
             <a href="Html/iniciosesion.html" class="iniciar">✈INICIAR SESION</a>
-            <a href="Html/registro.html"class="registrarse"> ✈REGISTRARSE</a>
+            <a href="Html/registro.html"class="registrarse"> ✈CREA TU USUARIO</a>
             </div>
             <div class="infor">
             <img class="logo" src="imagenes/avionlog.jpg.png" alt="">
@@ -73,9 +75,8 @@
             <div class="tabla_vuelos_administrador">
                 <div class="titulo">VUELOS</div>
                 <div class="elem_TI">N° VUELO</div>
-                <div class="elem_TI">HORA PROGRAMADA</div>
-                <div class="elem_TI">LUGAR DESTINO</div>
-                <div class="elem_TI">LUGAR SALIDA</div>
+                <div class="elem_TI">HORA SALIDA</div>
+                <div class="elem_TI">HORA LLEGADA</div>
                 <div class="elem_TI">AEROPUERTO SALIDA</div>
                 <div class="elem_TI">AEROPUERTO DESTINO</div>
                 <div class="elem_TI">ESTADO</div>
@@ -83,11 +84,10 @@
             
             while($row=mysqli_fetch_assoc($resultadoss)){?>
                 <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
-                <div class="elem"><?php echo $row["hora_programada"]; ?> </div>
-                <div class="elem"><?php echo $row["destino"]; ?> </div>
-                <div class="elem"><?php echo $row["lugar_salida"]; ?> </div>
-                <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
-                <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
+                <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
+                <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
                 <div class="elem"><?php echo $row["estado"]; ?> </div>
 
                 <?php } mysqli_free_result($resultadoss);?>
@@ -196,7 +196,8 @@
         </tr>
     </table>
     </div>
-    
+    <!--------------------------------- precios --------------------------->
+    <!--------------------------------- actividades --------------------------->
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
         <div class="contenedor_todo_actividades">
@@ -214,7 +215,7 @@
             <div  class="actividades"><img src="imagenes/actividad10.jpg" alt=""><h4>Holanda</h4><p>Un país de Europa conocido por su paisaje plano de canales</p><br><hr><div class="precio_actividad"><h5>$5'560.000</h5></div></div>
         </div>
     </div>
-    <!--------------------------------- precios --------------------------->
+    <!--------------------------------- actividades--------------------------->
 
     <!--------------------------------- servicios --------------------------->
     <div class="servicioo" id="servicioo">
@@ -275,6 +276,17 @@
       <!--------------------------------- alojamiento --------------------------->
     <div class="aloja" id="aloja">
     <h2 class="titulo_bienvenida">ALOJAMIENTO</h2>
+    <div style="display:flex">
+        <div class="hoteles1"><h5>Economico</h5><div class="div1"><p class="texto1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles2"><h5>Valor</h5><div class="div2"><p class="texto2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles3"><h5>Calidad</h5><div class="div3"><p class="texto3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles4"><h5>Superior</h5><div class="div4"><p class="texto4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+        <div class="hoteles5"><h5>Exepcional</h5><div class="div5"><p class="texto5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. In porro delectus laboriosam molestias assumenda cumque quod ratione ducimus nihil eveniet, ad necessitatibus ipsa inventore doloremque sed iusto. Aliquam, unde cum.</p></div></div>
+    
+
+    </div>
+    <br>
+
     </div>
     <!--------------------------------- alojamiento --------------------------->
 

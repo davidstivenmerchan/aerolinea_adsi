@@ -7,7 +7,6 @@
     $query7 = mysqli_query($mysqli,$max);
     $dat = mysqli_fetch_assoc($query7);
 
-
     $string = implode($dat);
 
     echo $string;
