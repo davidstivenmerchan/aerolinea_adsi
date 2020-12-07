@@ -85,8 +85,8 @@
                 <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
-                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
-                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
                 <div class="elem"><?php echo $row["estado"]; ?> </div>
 
                 <?php } mysqli_free_result($resultadoss);?>
