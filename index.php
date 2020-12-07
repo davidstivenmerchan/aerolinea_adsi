@@ -1,7 +1,8 @@
 <?php
     require_once('php/coneccion.php');
     $consulta = "SELECT * FROM vuelos INNER JOIN aeropuerto ON vuelos.aeropuerto_salida = aeropuerto.id_aeropuerto";
-    /* $consulta = "SELECT * FROM vuelos " */
+    $query= mysqli_query($mysqli, $consulta);
+    $fila = mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,8 +86,8 @@
                 <div class="elem"><?php echo $row["id_vuelo"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
                 <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
-                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
-                <div class="elem"><?php echo $row["id_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+                <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
                 <div class="elem"><?php echo $row["estado"]; ?> </div>
 
                 <?php } mysqli_free_result($resultadoss);?>

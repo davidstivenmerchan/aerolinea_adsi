@@ -1,7 +1,7 @@
 
 <?php
 require_once('../php/coneccion.php');
-$consulta_vuelos = "SELECT * FROM vuelos";
+$consulta_vuelos = "SELECT * FROM vuelos INNER JOIN aeropuerto ON vuelos.aeropuerto_salida = aeropuerto.id_aeropuerto"; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +31,8 @@ while($row=mysqli_fetch_assoc($resultados)){?>
     <div class="elem"><?php echo $row["hora_salida"]; ?> </div>
     <div class="elem"><?php echo $row["hora_llegada"]; ?> </div>
     
-    <div class="elem"><?php echo $row["aeropuerto_salida"]; ?> </div>
-    <div class="elem"><?php echo $row["aeropuerto_llegada"]; ?> </div>
+    <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
+    <div class="elem"><?php echo $row["nom_aeropuerto"]; ?> </div>
     <div class="elem"><?php echo $row["estado"]; ?> </div>
     <div class="elem"><a class="operacion" href="eliminarV.php?id=<?php echo $row["id_vuelo"]; ?>">Eliminar</a>|<a class="operacion"href="actualizar_Vuelos.php?id=<?php echo $row["id_vuelo"]; ?>">Editar</a> </div>
 
