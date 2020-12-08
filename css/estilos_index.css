@@ -227,21 +227,21 @@ footer{
     display: none;
     margin-top: 4.5%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .activi h2{
-    font-size: 55px;
+    font-size: 45px;
     margin-top: 1%;
-    color:  black;
-    text-shadow: 4px  2px 2px rgb(38, 5, 112);
-    font-family: 'Courier New';
+    color: white;
+    text-shadow: 4px  2px 2px black;
+    font-family: fantasy;
 }
 .texi{
     font-size: 25px;
     margin-top: 1%;
-    color:  black;
-    text-shadow: 1px  1px 1px rgb(38, 5, 112);
-    font-family: 'Courier New';
+    color:  rgb(83, 10, 241);
+    text-shadow: 2px  2px 2px white;
+    font-family: fantasy;
 }
 .contenedor_todo_actividades{
     display: flex;
@@ -302,7 +302,7 @@ box-shadow: 0px 2px 14px 8px rgba(66,56,66,0.72);
     margin-top: 5%;
 }
 .tabla_vuelos_administrador{
-    width: 90%;
+    width: 95%;
     background:   rgb(38, 5, 112);
     margin: 10px auto;
     display: grid;
@@ -467,12 +467,26 @@ table {
 /* --------------------------------- alojamiento --------------------------- */
 .aloja{
     display: none;
-    margin-top: 5%;
+    margin-top: 4.5%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
-/* --------------------------------- alojamiento --------------------------- */
-.titulo_bienvenida{
-    margin-left: 40px;
+.aloja h2{
+    font-size: 45px;
+    margin-top: 1%;
+    color: white;
+    text-shadow: 4px  2px 2px black;
+    font-family: fantasy;
 }
+.aloja h5{
+    font-size: 25px;
+    margin-top: 4%;
+    color:  rgb(83, 10, 241);
+    text-shadow: 2px  2px 2px white;
+    font-family: fantasy;
+}
+
+
 .hoteles1 h5{
     text-align: center;
    
@@ -578,3 +592,4 @@ table {
     position: relative;
 }
 
+/* --------------------------------- alojamiento --------------------------- */
