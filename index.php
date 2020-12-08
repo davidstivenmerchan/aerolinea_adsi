@@ -197,13 +197,13 @@
     <!--------------------------------- actividades --------------------------->
     <div class="activi" id="acti">
         <h2 class="titulo_bienvenida">ACTIVIDADES</h2>
-        <p class="texi">Planea desde ya tu viaje y conoce el mundo</p>
+        <p class="texi">"Planea desde ya tu viaje y conoce el mundo"</p>
         <div class="contenedor_todo_actividades">
             <div class="actividades"><img src="imagenes/actividad1.jpg" alt=""><h4>Islas Maldivas</h4><p>Un archipiélago remoto del Atlántico Sur.</p><br><hr><div class="precio_actividad"><h5>$8'000.000</h5></div></div>
             <div  class="actividades"><img src="imagenes/actividad2.jpg" alt=""><h4>Paris</h4><p>La capital de Francia, es una importante ciudad europea</p><br><hr><div class="precio_actividad"><h5>$4'000.000</h5></div></div>
             <div  class="actividades"><img src="imagenes/actividad3.jpg" alt=""><h4>Grecia</h4><p>Un país del sureste de Europa con miles de islas</p><br><hr><div class="precio_actividad"><h5>$6'500.000</h5></div></div>
             <div  class="actividades"><img src="imagenes/actividad4.jpg" alt=""><h4>Alemania</h4><p>Un país de Europa occidental con un paisaje de bosques.</p><br><hr><div class="precio_actividad"><h5>$6'320.000</h5></div></div>
-            <div  class="actividades"><img src="imagenes/actividad9.jpg" alt=""><h4>San Andres</h4><p>Una isla colombiana del mar Caribe</p><br><hr><div class="precio_actividad"><h5>$800.000</h5></div></div>
+            <div  class="actividades"><img src="imagenes/actividad9.jpg" alt=""><h4>San Andres</h4><p>Lugar paradisiaco que posee las más bellas playas de Colombia.</p><br><hr><div class="precio_actividad"><h5>$800.000</h5></div></div>
         </div>
         <div class="contenedor_todo_actividades">
             <div  class="actividades"><img src="imagenes/actividad5.jpg" alt=""><h4>Belgica-Tomorrowland</h4><p>Un país de Europa Occidental conocido por ciudades medievales</p><br><hr><div class="precio_actividad"><h5>$10'000.000</h5></div></div>
