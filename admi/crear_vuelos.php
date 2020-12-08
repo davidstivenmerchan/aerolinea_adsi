@@ -21,10 +21,13 @@ $fila_aero = mysqli_fetch_assoc($query_aero);
             <img src="../imagenes/logoage.png" alt="">
     <form method="POST" action="../php/crear_vuelos.php">
         <h2> CREAR VUELOS</h2>
-        <input type="number" placeholder="N° vuelo"name="nvuelos" autocomplete="off">
-        <input type="time" placeholder="Hora salida "name="hora" autocomplete="off">
-        <input type="time" placeholder="Hora llegada"name="horat" autocomplete="off">
-        <label for="">origen</label>
+        <label for="">N° VUELO</label>
+        <input class="vuelos" type="number" placeholder="N° vuelo"name="nvuelos" autocomplete="off"><br>
+        <label for="">HORA DE SALIDA</label>
+        <input class="hora"type="time" name="hora" autocomplete="off"><br>
+        <label for="">HORA DE LLEGADA</label>
+        <input class="horat" type="time" name="horat" autocomplete="off"><br>
+        <label for="">ORIGEN </label>
         <select class="inputR" name="asalida" id="asalida">
             <?php
             foreach ($query_aero as $salida) : ?>
@@ -33,9 +36,9 @@ $fila_aero = mysqli_fetch_assoc($query_aero);
             <?php
             endforeach;
             ?>
-        </select>
-        <label for="">destino</label>
-        <select class="inputR" name="adestino" id="adestino">
+        </select><br>
+        <label for="">DESTINO</label>
+        <select class="inputRR" name="adestino" id="adestino">
             <?php
             foreach ($query_aero as $destino) : ?>
                 <option value="<?php echo $destino['id_aeropuerto'] ?> ">
@@ -43,8 +46,9 @@ $fila_aero = mysqli_fetch_assoc($query_aero);
             <?php
             endforeach;
             ?>
-        </select>
-        <input type="text" placeholder="Estado"name="estado" autocomplete="off">
+        </select><br>
+        <label for="">ESTADO</label>
+        <input class="estado" type="text" placeholder="Estado"name="estado" autocomplete="off">
         <input class="enviar" type="submit">
     </form>
 </div>
