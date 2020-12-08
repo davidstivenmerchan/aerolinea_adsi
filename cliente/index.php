@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logoage.png">
     <link rel="stylesheet" href="cliente.css">
     <title>Clientes</title>
 </head>

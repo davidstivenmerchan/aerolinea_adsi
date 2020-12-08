@@ -13,6 +13,7 @@ $fila_aero = mysqli_fetch_assoc($query_aero);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="crear_vuelos.css">
+    <link rel="icon" href="../imagenes/logoage.png">
     <title>crear vuelos</title>
 </head>
 <body>

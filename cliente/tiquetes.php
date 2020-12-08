@@ -9,6 +9,7 @@ require_once('../php/validacion.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tiquetes.css">
+    <link rel="icon" href="../imagenes/logoage.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Comprar Tiquetes</title>
 </head>

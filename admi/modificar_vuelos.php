@@ -9,6 +9,7 @@ $consulta_vuelos = "SELECT * FROM vuelos INNER JOIN aeropuerto ON vuelos.aeropue
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="icon" href="../imagenes/logoage.png">
 <link rel="stylesheet" href="../css/modificarVuelos.css">
 <title>Panel de edicion de vuelos</title>
 </head>

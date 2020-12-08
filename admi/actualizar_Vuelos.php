@@ -10,6 +10,7 @@ $consulta_vuelos = "SELECT * FROM vuelos WHERE id_vuelo='$id'";
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="icon" href="../imagenes/logoage.png">
 <link rel="stylesheet" href="../css/modificarVuelos.css">
 <title>Panel de edicion de vuelos</title>
 </head>
@@ -32,8 +33,8 @@ while($row=mysqli_fetch_assoc($resultados)){?>
     <input type="text" class="elem" value="<?php echo $row["hora_llegada"];?>" style="color:black" name="destino">
    
     <input type="text" class="elem" value="<?php echo $row["aeropuerto_salida"];?>" style="color:black" name="asalida">
-    <input type="text" class="elem" value="<?php echo $row["aeropuerto_llegada"];?>" style="color:black" name="estado">
-    <input type="text" class="elem" value="<?php echo $row["estado"];?>" style="color:black" name="allegada">
+    <input type="text" class="elem" value="<?php echo $row["aeropuerto_llegada"];?>" style="color:black" name="allegada">
+    <input type="text" class="elem" value="<?php echo $row["estado"];?>" style="color:black" name="estado">
     <input type="submit" value="ACTUALIZAR" style="background:rgb(250, 80, 63); cursor:pointer; color:white"  >
 
     <?php } mysqli_free_result($resultados);?>
