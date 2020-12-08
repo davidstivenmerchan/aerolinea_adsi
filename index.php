@@ -102,8 +102,8 @@
 
    
     <div class="btique">BUSCA TUS TIQUETES</div>
-    <form action="tiquetes.html" class="tiquetesb">
-                <input type="text" class="ntiquete" placeholder="ingrese su cedula">
+    <form action="info/tiquete.php" class="tiquetesb" method="POST">
+                <input type="text" class="ntiquete" placeholder="ingrese su cedula" name="cc" autocomplete="off">
                 <input type="submit" class="envitiquetes" value="BUSCAR">
     </form>
 
@@ -116,9 +116,9 @@
     <div class="tiquee" id="viaje">
     <h2 class="titulo_bienvenida">MIS VIAJES</h2>
     <div class="btique">BUSCA TUS VIAJES</div>
-    <form action="" class="tiquetesb">
-                <input type="text" class="ntiquete" placeholder="ingrese su cedula">
-                <input type="submit" class="envitiquetes" value="BUSCAR">
+    <form action="info/misviajes.php" class="tiquetesb" method="POST">
+                <input type="text" class="ntiquete" placeholder="ingrese su numero de vuelo" name="id_vuelo" autocomplete="off">
+                <input type="submit" class="envitiquetes" value="BUSCAR" name="enviar">
 
 
     
