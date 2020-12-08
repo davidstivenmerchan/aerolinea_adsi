@@ -1,5 +1,4 @@
 <?php
-   
     require_once('../php/validacion.php');
     require_once('../php/coneccion.php');
 
@@ -23,6 +22,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logoage.png">
     <link rel="stylesheet" href="admin.css">
     <title>ADMINISTRADOR</title>
 </head>
@@ -72,7 +72,7 @@
                 <ul class="menu">
                     <li><a href="vuelos.php">Vuelos</a>
                         <ul class="submenu">
-                            <li><a href="crear_vuelos.html">Crear Vuelos</a></li>
+                            <li><a href="crear_vuelos.php">Crear Vuelos</a></li>
                             <li><a href="modificar_vuelos.php">Editar Vuelos</a></li>
                         </ul>
                     </li>

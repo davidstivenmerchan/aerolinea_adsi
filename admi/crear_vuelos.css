@@ -4,25 +4,111 @@
     font-family: 'Saira Condensed', sans-serif;
 
 }
+body{
+    background-image: url(../imagenes/crearvu.jpeg);
+}
+.conte{
+    display: flex;
+}
+.formu{
+    
+    width: 40%;
+}
+.formu img{
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 7%;
+}
+h2{
+    font-size: 35px;
+    margin-top: 18%;
+    color:  rgb(38, 5, 112);
+    text-shadow: 2px  1px 1px white;
+}
 form{
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width:430px;
     height: 450px;
-    border: solid rgb(38, 5, 112);
+    border:1px solid rgb(38, 5, 112);
     border-radius: 10px;
-    margin: 50px auto;
+    margin-top: -21%;
+    margin-left: 6%;
+    text-align: center;
+    padding: 10px;
 }
 h1{
+    margin-left: 10%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 24%;
+    font-size: 75px;
+    color: rgb(38, 5, 112);
+    text-shadow: 4px 3px 3px black;
 }
-form input{
-    margin: 10px 120px;
+.vuelos{
+    margin-top: 10px ;
     width: 250px;
     height: 30px;
     border-radius: 10px;
-    
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 17%;
+}
+.hora{
+    margin-top: 10px ;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 5%;
+}
+.horat{
+    margin-top: 10px ;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 2%;
+}
+.estado{
+    margin-top: 10px ;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 20%;
+}
+.enviar{
+   margin-top: 5%;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
 }
 form input:hover{
-    border:solid tomato;
+    border:2px solid green;
+}
+label{
+    color: black;
+    text-shadow: 2px  1px 1px white;
+}
+.inputR{
+    margin-top: 10px ;
+    width: 250px;
+    height: 35px;
     border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 21%;
+}
+.inputRR{
+    margin-top: 10px ;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border:2px solid rgb(38, 5, 112);
+    text-align: center;
+    margin-left: 20%;
 }

@@ -13,18 +13,21 @@
 //////////////// VALORES INICIALES ///////////////////////
 
 $tabla="";
-$query="SELECT * FROM clientes ORDER BY documento";
+$query="SELECT * FROM usuario WHERE usuario.id_tip_user = 2  ORDER BY documento";
 
 ///////// LO QUE OCURRE AL TECLEAR SOBRE EL INPUT DE BUSQUEDA ////////////
-if(isset($_POST['clientes']))
+if(isset($_POST['usuario']))
 {
-	$q=$mysqli->real_escape_string($_POST['clientes']);
-	$query="SELECT * FROM clientes WHERE 
+	$q=$mysqli->real_escape_string($_POST['usuario']);
+	$query="SELECT * FROM usuario WHERE 
 		documento LIKE '%".$q."%' OR
-		nombre LIKE '%".$q."%' OR
-		apellido LIKE '%".$q."%' OR
-		id_vuelo LIKE '%".$q."%' OR
-		tiquetes LIKE '%".$q."%'";
+		usuario LIKE '%".$q."%' OR
+		nom_user LIKE '%".$q."%' OR
+		ape_user LIKE '%".$q."%' OR
+		celular	LIKE '%".$q."%' OR
+		direccion LIKE '%".$q."%' OR
+		correo	LIKE '%".$q."%' OR
+		clave LIKE '%".$q."%'";
 }
 
 $buscarClientes=$mysqli->query($query);
@@ -36,8 +39,9 @@ if ($buscarClientes->num_rows > 0)
 			<td>DOCUMENTO</td>
 			<td>NOMBRE</td>
 			<td>APELLIDO</td>
-			<td>VUELO</td>
-			<td>TIQUETES</td>
+			<td>CELULAR</td>
+			<td>DIRECCIÓN</td>
+			<td>CORREO</td>
 		</tr>';
 
 	while($filaClientes= $buscarClientes->fetch_assoc())
@@ -45,10 +49,11 @@ if ($buscarClientes->num_rows > 0)
 		$tabla.=
 		'<tr>
 			<td>'.$filaClientes['documento'].'</td>
-			<td>'.$filaClientes['nombre'].'</td>
-			<td>'.$filaClientes['apellido'].'</td>
-			<td>'.$filaClientes['id_vuelo'].'</td>
-			<td>'.$filaClientes['tiquetes'].'</td>
+			<td>'.$filaClientes['nom_user'].'</td>
+			<td>'.$filaClientes['ape_user'].'</td>
+			<td>'.$filaClientes['celular'].'</td>
+			<td>'.$filaClientes['direccion'].'</td>
+			<td>'.$filaClientes['correo'].'</td>
 		 </tr>
 		';
 	}

@@ -1,75 +1,48 @@
 <?php
-require_once('../php/coneccion.php');
-
-$consul3 = "SELECT * FROM origen WHERE id_origen = '1'";
-$query3 = mysqli_query($mysqli,$consul3);
-$fila3 = mysqli_fetch_assoc($query3);
-
-if($fila3){
-    $_SESSION['origin'] = $fila3['nom_origen'];
-}
-$consul4 = "SELECT * FROM origen WHERE id_origen = '2'";
-$query4 = mysqli_query($mysqli,$consul4);
-$fila4 = mysqli_fetch_assoc($query4);
-
-if($fila4){
-    $_SESSION['origin2'] = $fila4['nom_origen'];
-}
- 
-$consul5 = "SELECT * FROM destino WHERE id_destino = '1'";
-$query5 = mysqli_query($mysqli,$consul5);
-$fila5 = mysqli_fetch_assoc($query5);
-
-if($fila5){
-    $_SESSION['destino'] = $fila5['nom_destino'];
-}
-
-$consul6 = "SELECT * FROM destino WHERE id_destino = '2'";
-$query6 = mysqli_query($mysqli,$consul6);
-$fila6 = mysqli_fetch_assoc($query6);
-
-if($fila6){
-    $_SESSION['destino2'] = $fila6['nom_destino'];
-}
-
-$consul6 = "SELECT * FROM clase WHERE id_clase = '2'";
-$query6 = mysqli_query($mysqli,$consul6);
-$fila6 = mysqli_fetch_assoc($query6);
-
-if($fila6){
-    $_SESSION['destino2'] = $fila6['nom_destino'];
-}
+require_once('../php/validacion.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiquetes</title>
+    <link rel="stylesheet" href="tiquetes.css">
+    <link rel="icon" href="../imagenes/logoage.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Comprar Tiquetes</title>
 </head>
-<body>
+<body> 
     <div class="for">
-        <form action="tiquete.php" method="POST">
-            <label for="apellido">Documento</label>
-            <input type="number" name="doc" id="docu" placeholder="documento">
-            <label for="">Origen</label>
-            <label for="origen">
-                <select name="ori" id="orige">
-                    <option value="1"><?php echo $_SESSION['origin']; ?></option>
-                    <option value="2"><?php echo $_SESSION['origin2']; ?></option>
-                </select>
-            </label>
-            <label for="">Destino</label>
-            <label for="origen">
-                <select name="ori" id="orige">
-                    <option value="1"><?php echo $_SESSION['destino']; ?></option>
-                    <option value="2"><?php echo $_SESSION['destino2']; ?></option>
-                </select>
-            </label>
-            <label for="">Acompañantes</label>
-            <input type="number" placeholder="Ingrese acompañantes">
-            <label for="">Clade</label>
+        
+        <form action="proceso_compra.php" method="POST" name="tiquetesF">
+            <h1>¡COMPRA TUS TIQUETES!</h1>
+            <select name="compra" id="">
+                <option value="">Elija un Destino</option>
+                <option value="1">Suiza</option>
+                <option value="2">China</option>
+                <option value="3">Corea Del Sur</option>
+                <option value="4">Singapur</option>
+            </select>
+            <select name="clase" id="">
+                <option value="">Elija Una Clase</option>
+                <option value="1">Economica</option>
+                <option value="2">Premium Economy</option>
+                <option value="3">Ejecutiva/Bussines</option>
+                <option value="4">Primera Clase</option>
+            </select>
+            <div class="pasajeross">
+                <label for="pasajeros">Numero de pasajeros</label>
+               <div class="incre">
+                <input type="button" value="-" onclick="tiquetesF.pasajeros.value--" class="resta"> 
+                <input type="text" name="pasajeros" value="1" class="pasa">
+                <input type="button" value="+" onclick="tiquetesF.pasajeros.value++" class="suma">
+                </div>
+                <input type="hidden" value="<?php echo $_SESSION['cc'];?>" name="cc">
+             
+            </div>
+               <input class="siguiente" type="submit" value="Siguente" name="enviar">
+
+            <p> &copy; El tiquete se comprara en nombre de la cedula <?php echo $_SESSION['cc'];?> </p>
         </form>
     </div>
 </body>

@@ -1,12 +1,12 @@
 $(obtener_registros());
 
-function obtener_registros(clientes)
+function obtener_registros(usuario)
 {
 	$.ajax({
 		url : 'consulta.php',
 		type : 'POST',
 		dataType : 'html',
-		data : { clientes: clientes },
+		data : { usuario: usuario },
 		})
 
 	.done(function(resultado){

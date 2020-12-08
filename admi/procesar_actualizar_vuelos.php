@@ -4,12 +4,12 @@
     $idvuelo = $_POST['idvuelo'];
     $hora = $_POST['hora'];
     $destino = $_POST['destino'];
-    $lsalida = $_POST['lsalida'];
+
     $asalida = $_POST['asalida'];
     $estado = $_POST['estado'];
     $allegada = $_POST['allegada'];
 
-    $consul_actualizar = "UPDATE vuelos SET id_vuelo='$idvuelo', hora_programada='$hora', destino='$destino', lugar_salida='$lsalida', aeropuerto_salida='$asalida', estado='$estado', aeropuerto_llegada='$allegada' WHERE id_vuelo='$idvuelo'";
+    $consul_actualizar = "UPDATE vuelos SET id_vuelo='$idvuelo', hora_salida='$hora', hora_llegada='$destino', aeropuerto_salida='$asalida', estado='$estado', aeropuerto_llegada='$allegada' WHERE id_vuelo='$idvuelo'";
     $resultadoo =mysqli_query($mysqli, $consul_actualizar);
 
     if($resultadoo){
